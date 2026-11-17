@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "baseline": "udshp",
+    "input_sha256": {
+      "hypergraph.updates": "29b2c9c3261da773295a57559557028db6af9e5fc81f7da2820acc8cbf3dfeb9",
+      "hypergraph.queries.tsv": "ce9252b993804821123632f360f8889b3890d9fc869fbc70ce3e2810a53c4189"
+    },
+    "binary_sha256": "8c07544edde071dcaff2cc2078483e42c14db06cd7e10f1e100d2c56f53199dc",
+    "epsilon": ".1",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\udshp.exe",
+      "<artifact>\\runs\\release-validation\\hypergraph\\004_dblp_k4_replay_hybrid_s1_r1\\hypergraph.updates",
+      "<artifact>\\runs\\release-validation\\dynamic\\udshp\\result",
+      "--epsilon",
+      "0.1",
+      "--queries",
+      "<artifact>\\runs\\release-validation\\hypergraph\\004_dblp_k4_replay_hybrid_s1_r1\\hypergraph.queries.tsv",
+      "--check",
+      "0",
+      "--dump-assignments",
+      "0",
+      "--checkpoint",
+      "1000",
+      "--budget-seconds",
+      "0"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:42Z",
+  "exit_code": 0,
+  "wall_s": 2.86920930002816,
+  "query_count": 5,
+  "original_log_sha256": "5b6d936e74c749bb3ec4061f56816a822f1a375b6de20eb94349d3260de728ea",
+  "log_sha256": "f0ad3e2be4db6454dc1e5f2ce3631cbc0853512bf86f78a9a7230fe5bd50d7b3"
+}

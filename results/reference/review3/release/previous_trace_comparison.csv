@@ -1,0 +1,5 @@
+case,arm,certified_updates,same_graphs,same_witnesses,same_fallback_outcomes,release_fallbacks
+dblp,maintained,40,40,40,40,0
+dblp,cold,40,40,40,40,0
+wiki,maintained,40,40,13,32,8
+wiki,cold,40,40,40,40,0

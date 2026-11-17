@@ -1,0 +1,29 @@
+{
+  "compiler": "MSVC x64",
+  "command": [
+    "cl",
+    "/nologo",
+    "/O2",
+    "/std:c++20",
+    "/openmp:llvm",
+    "/EHsc",
+    "/I<artifact>\\src",
+    "<artifact>\\versions\\guarded_audit\\main.cpp",
+    "/Fe:guarded_audit.exe",
+    "/link",
+    "Psapi.lib",
+    "/STACK:268435456"
+  ],
+  "sources": {
+    "src\\absorber_claim.hpp": "c7d95c208d5abd5dc8f3c8ea09c8948ddd108db35eef0f67a72b8ce81d131744",
+    "src\\barrier.hpp": "b22a6470ef6947a63da27eb4ab24f56733c89c40ce70f3b04e777bdf2c9fc818",
+    "src\\cliques.hpp": "fd639bea455fad54067622a4c720723571fb815a8854f8ad071a432ba550ba90",
+    "src\\export_snapshot.hpp": "0be73872be125593640c1affb4210c97b18f469fd6dd3acbee067da2af8a0782",
+    "src\\graph.hpp": "7aa1ed64e3803440946ae385a7f2da32ca7bd5f930d91c22477c3119eb22b590",
+    "versions\\guarded_audit\\cliques.hpp": "a6a9a50e2d07bbab8f3060112f2b07e79fb2688d782aa87704effe0975a9d6d9",
+    "versions\\guarded_audit\\graph.hpp": "dc5ce61992a450a420ddbc6e9122fd989803073b5827b0b7ed0bd9d4d46906dd",
+    "versions\\guarded_audit\\guard_diagnostics.hpp": "1d27a2be3ecf5508f054193a34cb36c62463c0d5345b18eb30e85e7eb4732ef6",
+    "versions\\guarded_audit\\main.cpp": "0075d16973ba79743be0e7b6a6ae854d2e0d829a5f7f63e897eb5b1c98bd2ebf"
+  },
+  "binary_sha256": "cc4120c6da69b5a25ae7e47533b2968bbef9b2cbc9ea1f32e192c110f3cf637a"
+}

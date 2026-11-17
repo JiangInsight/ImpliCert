@@ -1,0 +1,9 @@
+src/** -text
+* -text
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/validation/**/*.log -whitespace
+results/reference/** -whitespace
+versions/** -text
+tools/** -text
+results/reference/** -text
+*.exe binary

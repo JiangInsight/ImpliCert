@@ -1,0 +1,28 @@
+{
+  "command": [
+    "<cxx>",
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-DHB_PROFILE=0",
+    "-I<artifact>\\external\\cap\\src",
+    "-I<artifact>\\external\\cap\\baselines\\cq",
+    "-I<artifact>\\external\\cap\\baselines\\udshp\\core",
+    "-I<artifact>\\external\\cap\\baselines\\udshp\\include",
+    "-I<artifact>\\external\\cap\\baselines\\common",
+    "-I<artifact>\\build\\zlib",
+    "-lpsapi",
+    "<artifact>\\build\\adapters\\cap.cpp",
+    "<artifact>\\build\\zlib\\libz.a",
+    "-o",
+    "<artifact>\\build\\cap.exe",
+    "-static",
+    "-Wl,--stack,268435456"
+  ],
+  "compiler": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+  "sources": {
+    "<artifact>\\build\\adapters\\cap.cpp": "515b801264f7517fa04ea2c8e18bb88c9fb4142100b4409438260eff217dc9a8",
+    "<artifact>\\build\\zlib\\libz.a": "e2186b0652e5df894f329bf4418f2052aabab63cec60ccd7146bba702c4eafe8"
+  },
+  "binary_sha256": "df5015c02fee0745434b40cb5e617c5273c30cf227f4cfaf507381a5c05194fb"
+}

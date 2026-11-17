@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "main",
+    "job": {
+      "dataset": "dblp",
+      "version": "v7",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "004_dblp_k4_replay_hybrid_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "b0b31a369d5bfd9fe12fbafc8d13dfcdb057e61f090427631bd50ef082fddaf5",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\versions\\v7\\implicert-v7.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:26Z",
+  "exit_code": 0,
+  "wall_s": 0.11104679998243228,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "d3a30cd084955cd3ee8217d2b6e9942b875ad69b5fe5df4b3a64268682a4c634",
+  "log_sha256": "e6ae43ca41b73254c5da415c2c07fb0d1df62d4b39e0d647b2616d57bc67fd06"
+}

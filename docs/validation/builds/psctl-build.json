@@ -1,0 +1,33 @@
+{
+  "command": [
+    "<cxx>",
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-msse4.2",
+    "-include",
+    "immintrin.h",
+    "-include",
+    "cassert",
+    "-fopenmp",
+    "-I<artifact>\\external\\ccas",
+    "<artifact>\\tools\\psctl.cpp",
+    "<artifact>\\build\\adapters\\psctl_sct.cpp",
+    "<artifact>\\external\\ccas\\graph.cpp",
+    "<artifact>\\external\\ccas\\pava.cpp",
+    "<artifact>\\external\\ccas\\heap.cpp",
+    "-o",
+    "<artifact>\\build\\psctl.exe",
+    "-static",
+    "-Wl,--stack,268435456"
+  ],
+  "compiler": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+  "sources": {
+    "<artifact>\\tools\\psctl.cpp": "6d8a6fe5f734c80aeda62bdaedaf9d48e638a70fd632a1ed028e2e0af8b8a01d",
+    "<artifact>\\build\\adapters\\psctl_sct.cpp": "361dfbcc47eb811c743adfd35d8a39fc7ba4d02e2be7b6443e33dc13a9766c91",
+    "<artifact>\\external\\ccas\\graph.cpp": "a0e61426f6d02a4b867ee120245cb7ea78bc609a88a6c79c06efdac865211c48",
+    "<artifact>\\external\\ccas\\pava.cpp": "3c4c21623708ddb0f106280fe8f22005f721c8df8f3418867fcf55fab81edc9a",
+    "<artifact>\\external\\ccas\\heap.cpp": "2f064e3de36c1a73122b9e75411bba2d2ea637f91d55f32b1de46417d8ee7b0d"
+  },
+  "binary_sha256": "c07a9c9cea0c0aff78ca6daf0ca72dc8fc3ff837d08048406b6c8bc7774c213a"
+}

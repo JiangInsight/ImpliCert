@@ -1,0 +1,56 @@
+Reading graph from file <artifact>\runs\release-validation\main\004_dblp_k4_replay_hybrid_s1_r1\snapshot_b4.txt
+Graph size |V| = 24, |E| = 83
+Building graph structure
+Building finished
+Graph size after decompostion |V| = 24, |E| = 83
+24 83
+r_max =  4.49925
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.1248115079
+CLIQUES 41
+PASS 1 4 4.4992460317460328 0.054321200
+r_max =  4.23965
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0599119496
+PASS 2 4 4.2396477983906529 0.054364200
+r_max =  4.15847
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0396183389
+PASS 3 4 4.1584733556512958 0.054400400
+r_max =  4.11848
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0296205140
+PASS 4 4 4.1184820561479123 0.054433400
+r_max =  4.09466
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0236642003
+PASS 5 4 4.0946568013943132 0.054817400
+r_max =  4.07883
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0197084626
+PASS 6 4 4.0788338503090014 0.054849400
+r_max =  4.06755
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0168885901
+PASS 7 4 4.0675543605918554 0.054876800
+r_max =  4.0591
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0147758448
+PASS 8 4 4.0591033790283557 0.054901700
+r_max =  4.05253
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0131334358
+PASS 9 4 4.0525337431875643 0.054927200
+r_max =  4.04728
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0118198375
+PASS 10 4 4.0472793501709878 0.054952000
+r_max =  4.04298
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0107452058
+PASS 11 4 4.0429808232885911 0.054976000
+r_max =  4.0394
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0098497316
+PASS 12 4 4.0393989263474905 0.055000400
+memcap: limit_mb=32768 peak_mb=191 exit=0

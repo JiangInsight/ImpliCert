@@ -1,0 +1,4 @@
+run,graph,group,b,base_radius,wide_radius,base_pr_iterations,wide_pr_iterations,wide_certified,wide_ratio,wide_s
+dblp_targeted,dblp,adversarial,19,300,340,11,11,1,1.0024202538672162,0.4302833
+wiki200_targeted,wiki,long,4,300,340,39,39,1,1.0047794926300042,0.6105538
+wiki200_targeted,wiki,long,12,300,340,38,38,1,1.0049150935881996,0.6081808

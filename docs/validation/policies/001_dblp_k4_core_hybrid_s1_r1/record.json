@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "suite": "policies",
+    "job": {
+      "dataset": "dblp",
+      "version": "policy",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "core",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "arm": "hybrid",
+      "fixed_edges": true,
+      "name": "001_dblp_k4_core_hybrid_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "f527b30afd31ea276da319410411ed74805ddaba4de3f1e184e797b681d7ab97",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\policy.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "core",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "KCDS_WRITE_EDGES": "<artifact>\\runs\\release-validation\\policies\\fixed-edges.txt"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:25Z",
+  "exit_code": 0,
+  "wall_s": 0.10777800000505522,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "2c63901ec008a24dbfbf695e422790130529a5fbbf0f87e8119368e212be2ad5",
+  "log_sha256": "bf9874cca28302a6d1178e023b342cc79e91c56e9500f319cb0cb69107bd6703"
+}

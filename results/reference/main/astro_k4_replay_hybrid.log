@@ -1,0 +1,55 @@
+  global it=10 UB=4420.7501 LB=4280.7742 gap=1.03270 t=0.2s
+  global it=20 UB=4306.4527 LB=4280.7742 gap=1.00600 t=0.4s
+mode=replay compact=0
+init graph=../data/bin/ca-AstroPh.bin n=18771 m=178245 k=4 eps=0.010 threads=24 iters=22 prep=0.01s iter=0.41s LB=4280.7742 |S|=62
+init_total time=0.41s repair_budget=0.41s
+init_drift maxout=46 lam_range=206.158
+  repair breakdown: refresh=0.001s (1 calls) relax=0.019s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=55
+batch=1 dels=500 ins=500 upd=0.0037s cliques_upd=162276 repair=0.0197s rounds=6 cliques_rep=4897777 UB=4266.9275 LB=4254.0484 gap=1.00303 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.004s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=27
+batch=2 dels=500 ins=500 upd=0.0017s cliques_upd=154812 repair=0.0040s rounds=3 cliques_rep=1068926 UB=4234.4951 LB=4213.6613 gap=1.00494 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.006s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=44
+batch=3 dels=500 ins=500 upd=0.0018s cliques_upd=153443 repair=0.0067s rounds=8 cliques_rep=1298544 UB=4283.3828 LB=4262.2419 gap=1.00496 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.016s (hessian=0.004s solve=0.001s) newton_rounds=1 absorbed=256 split=86
+batch=4 dels=500 ins=500 upd=0.0020s cliques_upd=167891 repair=0.0160s rounds=7 cliques_rep=4679664 UB=4283.3696 LB=4272.1774 gap=1.00262 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.016s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=82
+batch=5 dels=500 ins=500 upd=0.0023s cliques_upd=175038 repair=0.0164s rounds=7 cliques_rep=4674940 UB=4287.4951 LB=4276.7742 gap=1.00251 |S|=62
+  repair breakdown: refresh=0.001s (2 calls) relax=0.018s (hessian=0.004s solve=0.001s) newton_rounds=1 absorbed=256 split=84
+batch=6 dels=500 ins=500 upd=0.0020s cliques_upd=149328 repair=0.0193s rounds=10 cliques_rep=4645478 UB=4286.4057 LB=4275.6774 gap=1.00251 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.015s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=86
+batch=7 dels=500 ins=500 upd=0.0021s cliques_upd=175214 repair=0.0157s rounds=9 cliques_rep=4414927 UB=4287.0921 LB=4268.4032 gap=1.00438 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.017s (hessian=0.004s solve=0.001s) newton_rounds=1 absorbed=256 split=90
+batch=8 dels=500 ins=500 upd=0.0018s cliques_upd=175748 repair=0.0175s rounds=7 cliques_rep=4657240 UB=4291.1341 LB=4280.4032 gap=1.00251 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.014s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=67
+batch=9 dels=500 ins=500 upd=0.0025s cliques_upd=177115 repair=0.0141s rounds=3 cliques_rep=4842989 UB=4225.9077 LB=4205.0161 gap=1.00497 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.016s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=92
+batch=10 dels=500 ins=500 upd=0.0019s cliques_upd=162137 repair=0.0166s rounds=6 cliques_rep=4467240 UB=4216.8997 LB=4201.4839 gap=1.00367 |S|=62
+  global it=10 UB=4342.5979 LB=4201.4839 gap=1.03359 t=0.2s
+dumped ../data/snap_dumps/astro_k4_replay_hybrid_b10.txt
+check batch=10 load_relerr=2.12e-14 cS=260492 exact=260492 | warm_global iters=4 prep=0.01s iter=0.07s LB=4201.4839 | cold_global iters=17 iter=0.26s LB=4201.4839 | ours avg/batch=0.0168s repairs=10/10 | exact_ub=4216.899750 size=62 cold_prep=0.01s maxout=48 lam_range=205.249 cliques=5062809
+  repair breakdown: refresh=0.000s (1 calls) relax=0.013s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=65
+batch=11 dels=500 ins=500 upd=0.0029s cliques_upd=163005 repair=0.0133s rounds=3 cliques_rep=4644670 UB=4182.6402 LB=4172.0645 gap=1.00253 |S|=62
+  repair breakdown: refresh=0.001s (1 calls) relax=0.013s (hessian=0.003s solve=0.000s) newton_rounds=1 absorbed=256 split=87
+batch=12 dels=500 ins=500 upd=0.0027s cliques_upd=174375 repair=0.0137s rounds=5 cliques_rep=4632751 UB=4190.2159 LB=4179.7258 gap=1.00251 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.012s (hessian=0.003s solve=0.000s) newton_rounds=1 absorbed=256 split=59
+batch=13 dels=500 ins=500 upd=0.0026s cliques_upd=155288 repair=0.0123s rounds=3 cliques_rep=4529579 UB=4163.1387 LB=4142.6452 gap=1.00495 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.012s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=94
+batch=14 dels=500 ins=500 upd=0.0025s cliques_upd=182992 repair=0.0130s rounds=4 cliques_rep=4661931 UB=4193.9117 LB=4183.4355 gap=1.00250 |S|=62
+  repair breakdown: refresh=0.001s (1 calls) relax=0.016s (hessian=0.004s solve=0.001s) newton_rounds=1 absorbed=256 split=56
+batch=15 dels=500 ins=500 upd=0.0026s cliques_upd=165225 repair=0.0162s rounds=3 cliques_rep=6009739 UB=4118.6440 LB=4099.5645 gap=1.00465 |S|=62
+  repair breakdown: refresh=0.001s (2 calls) relax=0.019s (hessian=0.002s solve=0.001s) newton_rounds=1 absorbed=256 split=96
+batch=16 dels=500 ins=500 upd=0.0027s cliques_upd=157668 repair=0.0199s rounds=10 cliques_rep=4889950 UB=4111.8725 LB=4096.1613 gap=1.00384 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.014s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=60
+batch=17 dels=500 ins=500 upd=0.0027s cliques_upd=175024 repair=0.0142s rounds=4 cliques_rep=5479763 UB=4101.5373 LB=4083.7419 gap=1.00436 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.008s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=38
+batch=18 dels=500 ins=500 upd=0.0017s cliques_upd=178086 repair=0.0081s rounds=8 cliques_rep=1270513 UB=4113.0521 LB=4093.0645 gap=1.00488 |S|=62
+  repair breakdown: refresh=0.000s (1 calls) relax=0.023s (hessian=0.006s solve=0.001s) newton_rounds=2 absorbed=512 split=82
+batch=19 dels=500 ins=500 upd=0.0017s cliques_upd=159397 repair=0.0238s rounds=4 cliques_rep=9301551 UB=4020.7441 LB=4007.6290 gap=1.00327 |S|=62
+  repair breakdown: refresh=0.001s (1 calls) relax=0.015s (hessian=0.003s solve=0.001s) newton_rounds=1 absorbed=256 split=58
+batch=20 dels=500 ins=500 upd=0.0016s cliques_upd=166870 repair=0.0151s rounds=4 cliques_rep=5865677 UB=4013.1972 LB=3996.4677 gap=1.00419 |S|=62
+  global it=10 UB=4167.4776 LB=3933.0317 gap=1.05961 t=0.2s
+  global it=20 UB=4034.1458 LB=3996.4677 gap=1.00943 t=0.3s
+dumped ../data/snap_dumps/astro_k4_replay_hybrid_b20.txt
+check batch=20 load_relerr=2.91e-13 cS=247781 exact=247781 | warm_global iters=7 prep=0.01s iter=0.12s LB=3996.4677 | cold_global iters=20 iter=0.28s LB=3996.4677 | ours avg/batch=0.0171s repairs=20/20 | exact_ub=4013.197196 size=62 cold_prep=0.01s maxout=49 lam_range=204.308 cliques=5068505
+reranks total=0
+memory state_graph=3.5MB state_vectors=1.4MB state_thread_scratch=30.4MB process_peak=85.6MB

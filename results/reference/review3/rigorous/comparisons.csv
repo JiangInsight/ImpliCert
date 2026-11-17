@@ -1,0 +1,3 @@
+case,paired_updates,equal_graphs,equal_witness_sets,equal_witness_counts,certified_pairs,maintained_updates_to_accept_s,cold_updates_to_accept_s,cold_over_maintained_updates_to_accept_s,maintained_init_plus_updates_s,cold_init_plus_updates_s,cold_over_maintained_init_plus_updates_s,maintained_process_s,cold_process_s,cold_over_maintained_process_s
+dblp,40,40,40,40,40,15.0630594,19.80408345,1.3147450942137293,16.7793338,21.28241155,1.268370473087555,16.904349099990213,21.38363670000399,1.2649784131597455
+wiki,40,40,0,0,40,30.63502165,28.44419435,0.928486184046813,32.8735704,30.526953400000004,0.928616911049005,33.14418204998947,30.69034859999374,0.9259648813690816

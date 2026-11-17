@@ -1,0 +1,21 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+{"status": "ok", "cliques": 60, "witness_cliques": 55, "lower": "55/8", "upper": "3887360510671167/562949953421312", "raw": "7774721021342317/1125899906842624", "upward_inflation": 1.509903313490213e-14, "relative_inflation": 2.1865736343893823e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=0 total_s=0.466712900 engine_s=0.000115900 export_s=0.000530900 verify_s=0.461361600 rounds=0 dels=0 ins=0
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+  warm_fallback iters=2 prep=0.00s iter=0.00s time=0.00s UB=5.1745 LB=5.1250 closed=1
+{"status": "ok", "cliques": 49, "witness_cliques": 41, "lower": "41/8", "upper": "5825933944936859/1125899906842624", "raw": "2912966972468421/562949953421312", "upward_inflation": 1.509903313490213e-14, "relative_inflation": 2.9179870833884464e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=1 total_s=0.465699200 engine_s=0.000053900 export_s=0.001711200 verify_s=0.463830000 rounds=0 dels=1 ins=1
+  warm_fallback iters=5 prep=0.00s iter=0.00s time=0.00s UB=4.0332 LB=4.0000 closed=1
+{"status": "ok", "cliques": 40, "witness_cliques": 36, "lower": "4", "upper": "1135237708861125/281474976710656", "raw": "4540950835444489/1125899906842624", "upward_inflation": 9.769962616701378e-15, "relative_inflation": 2.4224001533201515e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=2 total_s=0.506111300 engine_s=0.000076400 export_s=0.000433400 verify_s=0.505577000 rounds=0 dels=1 ins=1
+  warm_fallback iters=1 prep=0.00s iter=0.00s time=0.00s UB=4.0332 LB=4.0000 closed=1
+{"status": "ok", "cliques": 40, "witness_cliques": 36, "lower": "4", "upper": "1135237708861125/281474976710656", "raw": "4540950835444489/1125899906842624", "upward_inflation": 9.769962616701378e-15, "relative_inflation": 2.4224001533201515e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=3 total_s=0.508952700 engine_s=0.000102700 export_s=0.001079200 verify_s=0.507719300 rounds=0 dels=1 ins=1
+  warm_fallback iters=1 prep=0.00s iter=0.00s time=0.00s UB=4.0332 LB=4.0000 closed=1
+{"status": "ok", "cliques": 41, "witness_cliques": 36, "lower": "4", "upper": "1135237708861125/281474976710656", "raw": "4540950835444489/1125899906842624", "upward_inflation": 9.769962616701378e-15, "relative_inflation": 2.4224001533201515e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=4 total_s=0.445759800 engine_s=0.000118500 export_s=0.000556500 verify_s=0.445045100 rounds=0 dels=1 ins=1
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=7.1MB
+memcap: limit_mb=32768 peak_mb=30 exit=0

@@ -1,0 +1,183 @@
+{
+  "enron": {
+    "file": "email-Enron.bin",
+    "kind": "static",
+    "archive": "email-Enron.txt.gz",
+    "url": "https://snap.stanford.edu/data/email-Enron.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10,
+    "recorded_csr_sha256": "9202d8082de4fdefba3954eee4ae0d9233c3b3636575c5bd977ad570ff64cf81"
+  },
+  "astro": {
+    "file": "ca-AstroPh.bin",
+    "kind": "static",
+    "archive": "ca-AstroPh.txt.gz",
+    "url": "https://snap.stanford.edu/data/ca-AstroPh.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "amazon": {
+    "file": "com-amazon.bin",
+    "kind": "static",
+    "archive": "com-amazon.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-amazon.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10,
+    "recorded_csr_sha256": "377102f2f17d4e4c04eee9d0d73d1b67308150bc473d487c7d8f57fa92e873fd"
+  },
+  "dblp": {
+    "file": "com-dblp.bin",
+    "kind": "static",
+    "archive": "com-dblp.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-dblp.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10,
+    "recorded_csr_sha256": "077301cd44875200c411162b35ad3d5f372ec3591dc3fec4e9db5d2980ddfdc0"
+  },
+  "youtube": {
+    "file": "com-youtube.bin",
+    "kind": "static",
+    "archive": "com-youtube.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-youtube.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "google": {
+    "file": "web-Google.bin",
+    "kind": "static",
+    "archive": "web-Google.txt.gz",
+    "url": "https://snap.stanford.edu/data/web-Google.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10,
+    "recorded_csr_sha256": "c68613b324afdb1c4c506317478abf196c532e1d18d39b58f1f7f61157a1313b"
+  },
+  "berkstan": {
+    "file": "web-BerkStan.bin",
+    "kind": "static",
+    "archive": "web-BerkStan.txt.gz",
+    "url": "https://snap.stanford.edu/data/web-BerkStan.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "skitter": {
+    "file": "as-skitter.bin",
+    "kind": "static",
+    "archive": "as-skitter.txt.gz",
+    "url": "https://snap.stanford.edu/data/as-skitter.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "patents": {
+    "file": "cit-Patents.bin",
+    "kind": "static",
+    "archive": "cit-Patents.txt.gz",
+    "url": "https://snap.stanford.edu/data/cit-Patents.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "pokec": {
+    "file": "soc-pokec-relationships.bin",
+    "kind": "static",
+    "archive": "soc-pokec-relationships.txt.gz",
+    "url": "https://snap.stanford.edu/data/soc-pokec-relationships.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "lj": {
+    "file": "com-lj.bin",
+    "kind": "static",
+    "archive": "com-lj.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-lj.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 10
+  },
+  "orkut": {
+    "file": "com-orkut.bin",
+    "kind": "static",
+    "archive": "com-orkut.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-orkut.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 20
+  },
+  "wiki": {
+    "file": "wiki-talk-temporal.tbin",
+    "kind": "temporal",
+    "archive": "wiki-talk-temporal.txt.gz",
+    "url": "https://snap.stanford.edu/data/wiki-talk-temporal.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "stream",
+    "batch": 10000,
+    "hold": "2000000",
+    "check": 10,
+    "recorded_csr_sha256": "ff2704bb0e49fa62cba51faa5152a5210681945ea60d5fe64e63d2808977525e"
+  },
+  "so": {
+    "file": "sx-stackoverflow.tbin",
+    "kind": "temporal",
+    "archive": "sx-stackoverflow.txt.gz",
+    "url": "https://snap.stanford.edu/data/sx-stackoverflow.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "stream",
+    "batch": 10000,
+    "hold": "10000000",
+    "check": 10
+  },
+  "frwiki": {
+    "file": "frwiki-dynamic.ebin",
+    "kind": "events",
+    "archive": "download.tsv.link-dynamic-frwiki.tar.bz2",
+    "url": "http://konect.cc/files/download.tsv.link-dynamic-frwiki.tar.bz2",
+    "citation": "KONECT link-dynamic-frwiki",
+    "mode": "events",
+    "batch": 10000,
+    "hold": "0",
+    "check": 10
+  },
+  "friendster": {
+    "file": "com-friendster.bin",
+    "kind": "static",
+    "archive": "com-friendster.ungraph.txt.gz",
+    "url": "https://snap.stanford.edu/data/com-friendster.ungraph.txt.gz",
+    "citation": "Stanford Network Analysis Project",
+    "mode": "replay",
+    "batch": 1000,
+    "hold": "0.1",
+    "check": 20
+  }
+}

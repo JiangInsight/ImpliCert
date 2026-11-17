@@ -1,0 +1,21 @@
+Reading edgelist from file edges.el
+Number of nodes = 24
+Number of edges = 83
+- Time = 0h0m0s10ms
+Building the graph structure
+Core value (max truncated degree) = 5
+Number of nodes (degree > 0) = 24
+- Time = 0h0m0s0ms
+Iterate over all cliques
+mode=3 num_iter=1000000 stop_ratio=1.01 limit_s=3600
+iteration 1: Approximate densest subgraph: 10 nodes, 32 edges, edge density = 0.711111, k-clique density = 3.700000, upper bound = 4.428571. 13 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 2: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.142857. 13 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 3: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.095238. 13 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 4: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.071429. 14 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 5: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.057143. 14 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 6: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.047619. 14 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 7: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.040816. 14 milliseconds. iterations_ms = 0.0 report_ms = 0.0
+iteration 8: Approximate densest subgraph: 9 nodes, 29 edges, edge density = 0.805556, k-clique density = 4.000000, upper bound = 4.035714. 14 milliseconds. iterations_ms = 0.0 report_ms = 0.0 certified
+- Time = 0h0m0s4ms
+- Overall time = 0h0m0s14ms
+memcap: limit_mb=32768 peak_mb=765 exit=0

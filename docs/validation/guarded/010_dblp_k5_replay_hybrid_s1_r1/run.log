@@ -1,0 +1,40 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=5 eps=0.010 threads=1 iters=3 prep=0.00s iter=0.00s LB=4.5000 |S|=8
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=0.537
+audit_state batch=0 writes=16 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=47 max_witness=36
+stored_box batch=0 vertices=24 lower=0 upper=0 invalid=0
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=3 absorbed=3 split=0
+baseline_status batch=1 warm=certified cold=certified
+check batch=1 load_relerr=8.91e-16 cS=20 exact=20 | warm_global iters=5 prep=0.00s iter=0.00s LB=2.5000 | cold_global iters=4 iter=0.00s LB=2.5000 | ours avg/batch=0.0001s repairs=1/1 | exact_ub=2.510497 size=8 cold_prep=0.00s maxout=6 lam_range=4.965 cliques=21
+audit_bounds batch=1 UB=2.5104973411676847 LB=2.5 size=8
+audit_state batch=1 writes=146 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=51 max_witness=36
+stored_box batch=1 vertices=24 lower=0 upper=0 invalid=0
+affected batch=1 deleted=16 inserted=1 witness_deleted=16 witness_inserted=0
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=17 repair=0.0001s rounds=8 cliques_rep=234 UB=2.5105 LB=2.5000 gap=1.00420 |S|=8
+  global it=10 UB=1.6322 LB=1.6250 gap=1.00442 t=0.0s
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=2 absorbed=2 split=0
+baseline_status batch=2 warm=certified cold=certified
+check batch=2 load_relerr=1.37e-15 cS=13 exact=13 | warm_global iters=10 prep=0.00s iter=0.00s LB=1.6250 | cold_global iters=8 iter=0.00s LB=1.6250 | ours avg/batch=0.0001s repairs=2/2 | exact_ub=1.629429 size=8 cold_prep=0.00s maxout=6 lam_range=5.353 cliques=14
+audit_bounds batch=2 UB=1.6294285306079306 LB=1.625 size=8
+audit_state batch=2 writes=324 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=51 max_witness=36
+stored_box batch=2 vertices=24 lower=0 upper=0 invalid=0
+affected batch=2 deleted=7 inserted=0 witness_deleted=7 witness_inserted=0
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=7 repair=0.0001s rounds=4 cliques_rep=86 UB=1.6294 LB=1.6250 gap=1.00273 |S|=8
+baseline_status batch=3 warm=certified cold=certified
+check batch=3 load_relerr=1.37e-15 cS=13 exact=13 | warm_global iters=1 prep=0.00s iter=0.00s LB=1.6250 | cold_global iters=8 iter=0.00s LB=1.6250 | ours avg/batch=0.0001s repairs=2/3 | exact_ub=1.629429 size=8 cold_prep=0.00s maxout=6 lam_range=5.353 cliques=14
+audit_bounds batch=3 UB=1.6294285306079306 LB=1.625 size=8
+audit_state batch=3 writes=387 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=51 max_witness=36
+stored_box batch=3 vertices=24 lower=0 upper=0 invalid=0
+affected batch=3 deleted=0 inserted=0 witness_deleted=0 witness_inserted=0
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=1.6294 LB=1.6250 gap=1.00273 |S|=8
+baseline_status batch=4 warm=certified cold=certified
+check batch=4 load_relerr=1.37e-15 cS=13 exact=13 | warm_global iters=1 prep=0.00s iter=0.00s LB=1.6250 | cold_global iters=8 iter=0.00s LB=1.6250 | ours avg/batch=0.0000s repairs=2/4 | exact_ub=1.629429 size=8 cold_prep=0.00s maxout=6 lam_range=5.353 cliques=14
+audit_bounds batch=4 UB=1.6294285306079306 LB=1.625 size=8
+audit_state batch=4 writes=450 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=53 max_witness=36
+stored_box batch=4 vertices=24 lower=0 upper=0 invalid=0
+affected batch=4 deleted=0 inserted=0 witness_deleted=0 witness_inserted=0
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=1.6294 LB=1.6250 gap=1.00273 |S|=8
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=6.8MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

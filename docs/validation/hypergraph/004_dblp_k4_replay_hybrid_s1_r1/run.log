@@ -1,0 +1,11 @@
+mode=replay compact=0
+hdump init cliques=60
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=0.000
+hdump batch=1 dels=1 ins=1 cliques_del=14 cliques_ins=3 steps=77
+hdump batch=2 dels=1 ins=1 cliques_del=9 cliques_ins=0 steps=86
+hdump batch=3 dels=1 ins=1 cliques_del=0 cliques_ins=0 steps=86
+hdump batch=4 dels=1 ins=1 cliques_del=0 cliques_ins=1 steps=87
+reranks total=0
+hdump done updates=87 active=41
+memcap: limit_mb=32768 peak_mb=66 exit=0

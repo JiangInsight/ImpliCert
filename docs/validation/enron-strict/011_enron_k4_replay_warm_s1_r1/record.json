@@ -1,0 +1,65 @@
+{
+  "identity": {
+    "suite": "strict",
+    "job": {
+      "dataset": "enron",
+      "version": "trace",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 100,
+      "batches": 3,
+      "mode": "replay",
+      "hold": "0.1",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {
+        "KCDS_NOCHECK": "1"
+      },
+      "limit": 14400,
+      "arm": "warm",
+      "repeat": 1,
+      "name": "011_enron_k4_replay_warm_s1_r1"
+    },
+    "graph_sha256": "9202d8082de4fdefba3954eee4ae0d9233c3b3636575c5bd977ad570ff64cf81",
+    "executable_sha256": "5f7f14f362825618468a8cbe932eeccd9310da37d6d367ec699d345b257074a4",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\trace.exe",
+      "<artifact>\\datasets\\email-Enron.bin",
+      "4",
+      "0.01",
+      "100",
+      "3",
+      "replay",
+      "1",
+      "1",
+      "0.1",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "KCDS_NOCHECK": "1",
+      "OMP_NUM_THREADS": "1",
+      "TRACE_ARM": "warm",
+      "TRACE_DIR": "<artifact>\\runs\\release-validation\\enron-strict\\011_enron_k4_replay_warm_s1_r1\\checkpoints",
+      "TRACE_PYTHON": "<python>",
+      "TRACE_CHECKER": "<artifact>\\verify_checkpoint.py",
+      "TRACE_NATIVE": "<artifact>\\build\\verify_k4.exe"
+    },
+    "limit_s": 14400
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:57:14Z",
+  "exit_code": 0,
+  "wall_s": 8.411848299962003,
+  "validation": {
+    "accepted_checkpoints": 4,
+    "contract": "independent-outward-k4-epsilon-1/100"
+  },
+  "original_log_sha256": "1b295e359c4ed9d1e1d2a036010fb64553ae1a0f8ebe093ee1e60e459c8d959b",
+  "log_sha256": "fdaabb046440658bed14509eeb6018d56bb7fad062a7f342950c7af9d6fbd179"
+}

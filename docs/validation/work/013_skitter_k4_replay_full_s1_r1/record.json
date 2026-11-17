@@ -1,0 +1,58 @@
+{
+  "identity": {
+    "suite": "work",
+    "job": {
+      "dataset": "skitter",
+      "version": "profile",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "arm": "full",
+      "repeat": 1,
+      "name": "013_skitter_k4_replay_full_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "780c6fa74457dde61b05d37461bf75b9ab7d18717abc90be9800a57d1e2ce466",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\profile.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:29Z",
+  "exit_code": 0,
+  "wall_s": 0.058707799995318055,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "f1af437d947074526d877b7d3c0716f7c062fc58bc29b6a22baa1cb9ae62d4aa",
+  "log_sha256": "048bc8e4f15a207b0cb9a1a5f1aad103c70f258130006646c5d307135251bae9"
+}

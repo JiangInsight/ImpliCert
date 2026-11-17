@@ -1,0 +1,61 @@
+{
+  "identity": {
+    "suite": "friend",
+    "job": {
+      "dataset": "friendster",
+      "version": "friend",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 1000,
+      "batches": 10,
+      "mode": "replay",
+      "hold": "0",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {
+        "KCDS_COMPACT": "1",
+        "KCDS_NOCHECK": "1"
+      },
+      "limit": 120.0,
+      "name": "001_friendster_k4_replay_hybrid_s1_r1"
+    },
+    "graph_sha256": "6fc9059fbc46f0d36621d664c8209fe3ef19909daa8c110370aa153f60699a0a",
+    "executable_sha256": "918351af22657d8600ff5f34002805a96d38d70e654750e8716830cdf72596ca",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\friend.exe",
+      "<artifact>\\runs\\release-validation\\input\\stress.bin",
+      "4",
+      "0.01",
+      "1000",
+      "10",
+      "replay",
+      "1",
+      "1",
+      "0",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "KCDS_COMPACT": "1",
+      "KCDS_NOCHECK": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 120.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:32Z",
+  "exit_code": 0,
+  "wall_s": 0.08422850002534688,
+  "validation": {
+    "batches": 10,
+    "numerical_checks": 0,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "607b84e2d09083b9558ba32d5a739c0e1fc1b9077ff3651714497a0b1430f3cc",
+  "log_sha256": "ca14e39b165fe1eb1a3171e012e63f22b8506b71b8e0d7f4f1c74d0eb4ec8ffe"
+}

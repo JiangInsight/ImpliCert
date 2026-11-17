@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "baseline": "kcca",
+    "input_sha256": {
+      "snapshot_b4.txt": "6230fe911c193a86be526481c535eea5331e3844901b174d4934d71ff65213a2"
+    },
+    "binary_sha256": "ee5a7353730a77d87e65f5f224d262a2f0cd7215eecebf4715bbf6b5e8908184",
+    "epsilon": "0.01",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\kcca.exe",
+      "<artifact>\\runs\\release-validation\\main\\004_dblp_k4_replay_hybrid_s1_r1\\snapshot_b4.txt",
+      "4",
+      "0",
+      "<artifact>\\runs\\release-validation\\static\\kcca_r1\\solution",
+      "1",
+      "1",
+      "1.01"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:37Z",
+  "exit_code": 0,
+  "wall_s": 4.09569010004634,
+  "original_log_sha256": "a6860bd821d046c2b3465042dc027e0684f8c53798ba1016451aaac3eac0d771",
+  "log_sha256": "80ad50c0120d01cac5750077e90cabca2282d8e4a82d1a9cbeb6b38160afb8d9"
+}

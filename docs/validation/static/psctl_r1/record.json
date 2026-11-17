@@ -1,0 +1,28 @@
+{
+  "identity": {
+    "baseline": "psctl",
+    "input_sha256": {
+      "snapshot_b4.txt": "6230fe911c193a86be526481c535eea5331e3844901b174d4934d71ff65213a2"
+    },
+    "binary_sha256": "c07a9c9cea0c0aff78ca6daf0ca72dc8fc3ff837d08048406b6c8bc7774c213a",
+    "epsilon": "0.01",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\psctl.exe",
+      "<artifact>\\runs\\release-validation\\main\\004_dblp_k4_replay_hybrid_s1_r1\\snapshot_b4.txt"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:41Z",
+  "exit_code": 0,
+  "wall_s": 0.26607710000826046,
+  "quality_target_reached": true,
+  "original_log_sha256": "4d997bd89f0cef49f66cfc90f04d3107af9430e5df8efba171775ffcd9386ac2",
+  "log_sha256": "594d3a079e142a81a7e353afc53fb76eff14017d38540af1260068426c393179"
+}

@@ -1,0 +1,28 @@
+{
+  "identity": {
+    "baseline": "maxclique",
+    "input_sha256": {
+      "snapshot_b4.txt": "6230fe911c193a86be526481c535eea5331e3844901b174d4934d71ff65213a2"
+    },
+    "binary_sha256": "f40f0f5088a578ab5ebbb7c00c7fa0b9e6f039e932479b904f055707d2aa0114",
+    "epsilon": "0.01",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\maxclique.exe",
+      "<artifact>\\runs\\release-validation\\main\\004_dblp_k4_replay_hybrid_s1_r1\\snapshot_b4.txt",
+      "60"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:36Z",
+  "exit_code": 0,
+  "wall_s": 0.06301740003982559,
+  "original_log_sha256": "5523b65dcfd9846ba6a2b56cd3ed42369641ed1eddc1446a48428cfeeb1fc944",
+  "log_sha256": "a59efac24cc77660234a0aa003836459b2c140a89572d12bbf354475f2c8dcbb"
+}

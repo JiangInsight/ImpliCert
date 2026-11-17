@@ -1,0 +1,65 @@
+{
+  "identity": {
+    "suite": "strict",
+    "job": {
+      "dataset": "dblp",
+      "version": "trace",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {
+        "KCDS_NOCHECK": "1"
+      },
+      "limit": 14400,
+      "arm": "warm",
+      "repeat": 1,
+      "name": "002_dblp_k4_replay_warm_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "5f7f14f362825618468a8cbe932eeccd9310da37d6d367ec699d345b257074a4",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\trace.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "KCDS_NOCHECK": "1",
+      "OMP_NUM_THREADS": "1",
+      "TRACE_ARM": "warm",
+      "TRACE_DIR": "<artifact>\\runs\\release-validation\\strict\\002_dblp_k4_replay_warm_s1_r1\\checkpoints",
+      "TRACE_PYTHON": "<python>",
+      "TRACE_CHECKER": "<artifact>\\verify_checkpoint.py",
+      "TRACE_NATIVE": "<artifact>\\build\\verify_k4.exe"
+    },
+    "limit_s": 14400
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:18Z",
+  "exit_code": 0,
+  "wall_s": 2.406759300036356,
+  "validation": {
+    "accepted_checkpoints": 5,
+    "contract": "independent-outward-k4-epsilon-1/100"
+  },
+  "original_log_sha256": "b0c27545a053a215514e389a9a62034927de717716c9a92f3476f2089006567b",
+  "log_sha256": "f7fbe8833cb81b35eafe389bab835448dd73aa6ce4b362961f32eeced673feb6"
+}

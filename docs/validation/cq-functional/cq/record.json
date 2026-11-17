@@ -1,0 +1,35 @@
+{
+  "identity": {
+    "baseline": "cq",
+    "input_sha256": {
+      "cq-tiny.updates": "7c748a5d41dc8f4315b129f385f276fdb874cd918a32119da27f3e7ed9027620",
+      "cq-tiny.queries.tsv": "db94466ec153b08a75b295498b1c820ab005b57e3913204e3a5002092169ca95"
+    },
+    "binary_sha256": "f303b69a43d41586a1b7f0cec165db27cbfeaebd656667b752cc5c34bc2e3741",
+    "epsilon": ".5",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\cq.exe",
+      "<artifact>\\runs\\release-validation\\input\\cq-tiny.updates",
+      "<artifact>\\runs\\release-validation\\input\\cq-tiny.queries.tsv",
+      "<artifact>\\runs\\release-validation\\cq-functional\\cq\\result",
+      "0.5",
+      "4",
+      "0",
+      "0"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:45Z",
+  "exit_code": 0,
+  "wall_s": 0.16949649999151006,
+  "query_count": 3,
+  "original_log_sha256": "5805d4ca3acd43bc441b99d71a91e239679e0d99d7a5b7c0741dc31b0c5e5035",
+  "log_sha256": "f5acb3dc32c8ec6c55e0192aac4baab7310b7c8ae3005cfef7930be0888396b9"
+}

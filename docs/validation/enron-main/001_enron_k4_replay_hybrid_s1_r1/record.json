@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "main",
+    "job": {
+      "dataset": "enron",
+      "version": "guarded",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 100,
+      "batches": 3,
+      "mode": "replay",
+      "hold": "0.1",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "001_enron_k4_replay_hybrid_s1_r1"
+    },
+    "graph_sha256": "9202d8082de4fdefba3954eee4ae0d9233c3b3636575c5bd977ad570ff64cf81",
+    "executable_sha256": "52e6ab1cf90e526343606a9322cadd455a68052b0fe5216f7673c046440ce24b",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\guarded.exe",
+      "<artifact>\\datasets\\email-Enron.bin",
+      "4",
+      "0.01",
+      "100",
+      "3",
+      "replay",
+      "1",
+      "1",
+      "0.1",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:51Z",
+  "exit_code": 0,
+  "wall_s": 16.280372599954717,
+  "validation": {
+    "batches": 3,
+    "numerical_checks": 3,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "45f8410e5b4b80157848ffb4a237890764e757441b2fe12af1607d3fd60be8ab",
+  "log_sha256": "0af963c45620a76cfd4fa194347d6a1bb583789797387ce6af916cfc761dae3e"
+}

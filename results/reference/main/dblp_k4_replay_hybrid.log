@@ -1,0 +1,46 @@
+mode=replay compact=0
+init graph=../data/bin/com-dblp.bin n=317080 m=944880 k=4 eps=0.010 threads=24 iters=5 prep=0.04s iter=0.21s LB=32191.1667 |S|=114
+init_total time=0.26s repair_budget=0.26s
+init_drift maxout=93 lam_range=47.307
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=13
+batch=1 dels=500 ins=500 upd=0.0023s cliques_upd=59960 repair=0.0078s rounds=2 cliques_rep=2976033 UB=32269.2932 LB=32157.1053 gap=1.00349 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=17
+batch=2 dels=500 ins=500 upd=0.0020s cliques_upd=54070 repair=0.0073s rounds=2 cliques_rep=2935378 UB=32265.8416 LB=32112.5439 gap=1.00477 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=16
+batch=3 dels=500 ins=500 upd=0.0030s cliques_upd=64485 repair=0.0072s rounds=2 cliques_rep=2920165 UB=32356.6098 LB=32216.4123 gap=1.00435 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.004s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=12
+batch=4 dels=500 ins=500 upd=0.0027s cliques_upd=42197 repair=0.0064s rounds=2 cliques_rep=1765132 UB=32346.9353 LB=32209.1842 gap=1.00428 |S|=114
+  repair breakdown: refresh=0.003s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=13
+batch=5 dels=500 ins=500 upd=0.0030s cliques_upd=69275 repair=0.0081s rounds=2 cliques_rep=2387272 UB=32314.2874 LB=32176.7018 gap=1.00428 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.006s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=24
+batch=6 dels=500 ins=500 upd=0.0022s cliques_upd=67514 repair=0.0084s rounds=2 cliques_rep=3750285 UB=32484.2121 LB=32346.8509 gap=1.00425 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.004s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=16
+batch=7 dels=500 ins=500 upd=0.0026s cliques_upd=54182 repair=0.0066s rounds=2 cliques_rep=2188149 UB=32464.0297 LB=32314.6579 gap=1.00462 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=24
+batch=8 dels=500 ins=500 upd=0.0023s cliques_upd=67412 repair=0.0075s rounds=2 cliques_rep=3718152 UB=32414.8839 LB=32267.0351 gap=1.00458 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.007s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=25
+batch=9 dels=500 ins=500 upd=0.0025s cliques_upd=64494 repair=0.0087s rounds=3 cliques_rep=3324260 UB=32452.8278 LB=32294.4561 gap=1.00490 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=19
+batch=10 dels=500 ins=500 upd=0.0021s cliques_upd=38987 repair=0.0070s rounds=3 cliques_rep=2747228 UB=32566.4733 LB=32429.3070 gap=1.00423 |S|=114
+check batch=10 load_relerr=6.64e-15 cS=3696941 exact=3696941 | warm_global iters=3 prep=0.03s iter=0.12s LB=32429.3070 | cold_global iters=4 iter=0.16s LB=32429.3070 | ours avg/batch=0.0100s repairs=10/10 | exact_ub=32566.473326 size=114 cold_prep=0.04s maxout=95 lam_range=47.334 cliques=9026078
+batch=11 dels=500 ins=500 upd=0.0024s cliques_upd=56685 repair=0.0000s rounds=0 cliques_rep=0 UB=32516.0104 LB=32337.1667 gap=1.00553 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.006s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=30
+batch=12 dels=500 ins=500 upd=0.0019s cliques_upd=49630 repair=0.0084s rounds=2 cliques_rep=3383078 UB=32588.6557 LB=32432.9912 gap=1.00480 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=14
+batch=13 dels=500 ins=500 upd=0.0025s cliques_upd=57240 repair=0.0070s rounds=2 cliques_rep=2073367 UB=32520.4745 LB=32371.5175 gap=1.00460 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=20
+batch=14 dels=500 ins=500 upd=0.0024s cliques_upd=58243 repair=0.0074s rounds=2 cliques_rep=2553460 UB=32572.9005 LB=32413.3070 gap=1.00492 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.003s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=12
+batch=15 dels=500 ins=500 upd=0.0023s cliques_upd=39312 repair=0.0055s rounds=3 cliques_rep=1556278 UB=32593.9085 LB=32441.8772 gap=1.00469 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=25
+batch=16 dels=500 ins=500 upd=0.0021s cliques_upd=52310 repair=0.0073s rounds=2 cliques_rep=3197927 UB=32564.1523 LB=32413.7193 gap=1.00464 |S|=114
+batch=17 dels=500 ins=500 upd=0.0021s cliques_upd=61361 repair=0.0000s rounds=0 cliques_rep=0 UB=32592.0053 LB=32379.8158 gap=1.00655 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.006s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=26
+batch=18 dels=500 ins=500 upd=0.0021s cliques_upd=67689 repair=0.0079s rounds=3 cliques_rep=3250550 UB=32634.4830 LB=32482.4474 gap=1.00468 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.007s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=38
+batch=19 dels=500 ins=500 upd=0.0023s cliques_upd=74484 repair=0.0095s rounds=2 cliques_rep=4165986 UB=32718.6053 LB=32574.7105 gap=1.00442 |S|=114
+  repair breakdown: refresh=0.002s (1 calls) relax=0.007s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=35
+batch=20 dels=500 ins=500 upd=0.0028s cliques_upd=63470 repair=0.0093s rounds=2 cliques_rep=4020659 UB=32573.5652 LB=32442.5965 gap=1.00404 |S|=114
+check batch=20 load_relerr=5.85e-15 cS=3698456 exact=3698456 | warm_global iters=3 prep=0.04s iter=0.12s LB=32442.5965 | cold_global iters=4 iter=0.16s LB=32442.5965 | ours avg/batch=0.0092s repairs=18/20 | exact_ub=32573.565235 size=114 cold_prep=0.03s maxout=95 lam_range=47.334 cliques=9062294
+reranks total=0
+memory state_graph=27.3MB state_vectors=24.0MB state_thread_scratch=153.3MB process_peak=493.3MB

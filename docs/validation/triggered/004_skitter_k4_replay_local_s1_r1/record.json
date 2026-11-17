@@ -1,0 +1,60 @@
+{
+  "identity": {
+    "suite": "triggered",
+    "job": {
+      "dataset": "skitter",
+      "version": "triggered",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {
+        "KCDS_REPAIR_ARM": "local"
+      },
+      "limit": 14400,
+      "arm": "local",
+      "name": "004_skitter_k4_replay_local_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "26eb222c441fc01fd8ae6be9726e93fdb1967e70f77f44c310c52b91668406e6",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\triggered.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "KCDS_REPAIR_ARM": "local",
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 14400
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:28Z",
+  "exit_code": 0,
+  "wall_s": 0.10464580002008006,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "55b023de8e2b17997b74f02fb6f5b28f397fdf967d15a3a6a6baaa44186dd10d",
+  "log_sha256": "4638d2c96c0e3e6670bf67fde7c18f6d95ee6567dcdd4330a3b6443351606ba1"
+}

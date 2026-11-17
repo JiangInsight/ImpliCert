@@ -1,0 +1,51 @@
+  global it=10 UB=8.3117 LB=8.2692 gap=1.00513 t=0.3s
+mode=replay compact=0
+init graph=../data/bin/com-amazon.bin n=334863 m=833285 k=4 eps=0.010 threads=24 iters=11 prep=0.04s iter=0.32s LB=8.2692 |S|=26
+init_total time=0.38s repair_budget=0.38s
+init_drift maxout=6 lam_range=36.722
+  repair breakdown: refresh=0.000s (1 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=26 split=0
+batch=1 dels=500 ins=500 upd=0.0018s cliques_upd=1020 repair=0.0016s rounds=6 cliques_rep=1250 UB=8.2931 LB=8.2692 gap=1.00289 |S|=26
+  repair breakdown: refresh=0.000s (2 calls) relax=0.017s (hessian=0.001s solve=0.014s) newton_rounds=7 absorbed=182 split=0
+batch=2 dels=500 ins=500 upd=0.0016s cliques_upd=1075 repair=0.0178s rounds=10 cliques_rep=6874 UB=8.2000 LB=8.2000 gap=1.00000 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.002s) newton_rounds=1 absorbed=27 split=0
+batch=3 dels=500 ins=500 upd=0.0013s cliques_upd=1120 repair=0.0024s rounds=4 cliques_rep=1593 UB=8.2280 LB=8.2000 gap=1.00341 |S|=25
+  repair breakdown: refresh=0.000s (2 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=4 dels=500 ins=500 upd=0.0011s cliques_upd=1088 repair=0.0023s rounds=18 cliques_rep=390 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.003s (hessian=0.000s solve=0.002s) newton_rounds=1 absorbed=27 split=0
+batch=5 dels=500 ins=500 upd=0.0012s cliques_upd=1006 repair=0.0027s rounds=7 cliques_rep=1393 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (2 calls) relax=0.003s (hessian=0.000s solve=0.002s) newton_rounds=1 absorbed=27 split=0
+batch=6 dels=500 ins=500 upd=0.0011s cliques_upd=994 repair=0.0036s rounds=16 cliques_rep=1210 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.003s (hessian=0.000s solve=0.002s) newton_rounds=1 absorbed=27 split=0
+batch=7 dels=500 ins=500 upd=0.0016s cliques_upd=1084 repair=0.0029s rounds=7 cliques_rep=1265 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.001s) newton_rounds=1 absorbed=27 split=0
+batch=8 dels=500 ins=500 upd=0.0017s cliques_upd=1079 repair=0.0024s rounds=5 cliques_rep=1421 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (2 calls) relax=0.003s (hessian=0.000s solve=0.001s) newton_rounds=1 absorbed=27 split=0
+batch=9 dels=500 ins=500 upd=0.0010s cliques_upd=1061 repair=0.0032s rounds=12 cliques_rep=1290 UB=8.2406 LB=8.2000 gap=1.00496 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=27 split=0
+batch=10 dels=500 ins=500 upd=0.0010s cliques_upd=966 repair=0.0014s rounds=6 cliques_rep=1217 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+dumped ../data/snap_dumps/amazon_k4_replay_hybrid_b10.txt
+check batch=10 load_relerr=1.22e-15 cS=205 exact=205 | warm_global iters=2 prep=0.04s iter=0.06s LB=8.2000 | cold_global iters=9 iter=0.26s LB=8.2000 | ours avg/batch=0.0054s repairs=10/10 | exact_ub=8.239488 size=25 cold_prep=0.04s maxout=7 lam_range=303.454 cliques=146794
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=27 split=0
+batch=11 dels=500 ins=500 upd=0.0016s cliques_upd=1071 repair=0.0018s rounds=9 cliques_rep=1242 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.001s) newton_rounds=2 absorbed=56 split=0
+batch=12 dels=500 ins=500 upd=0.0014s cliques_upd=1084 repair=0.0021s rounds=4 cliques_rep=2256 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=28 split=0
+batch=13 dels=500 ins=500 upd=0.0012s cliques_upd=1054 repair=0.0019s rounds=9 cliques_rep=1332 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.001s) newton_rounds=2 absorbed=56 split=0
+batch=14 dels=500 ins=500 upd=0.0011s cliques_upd=1037 repair=0.0026s rounds=9 cliques_rep=2224 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (2 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=15 dels=500 ins=500 upd=0.0011s cliques_upd=1034 repair=0.0018s rounds=15 cliques_rep=181 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=28 split=0
+batch=16 dels=500 ins=500 upd=0.0011s cliques_upd=1062 repair=0.0016s rounds=6 cliques_rep=1248 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=27 split=0
+batch=17 dels=500 ins=500 upd=0.0020s cliques_upd=1027 repair=0.0015s rounds=6 cliques_rep=1329 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.001s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=28 split=0
+batch=18 dels=500 ins=500 upd=0.0015s cliques_upd=992 repair=0.0015s rounds=6 cliques_rep=1412 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.001s) newton_rounds=2 absorbed=56 split=0
+batch=19 dels=500 ins=500 upd=0.0010s cliques_upd=986 repair=0.0022s rounds=5 cliques_rep=2156 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+  repair breakdown: refresh=0.000s (2 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=1 absorbed=28 split=0
+batch=20 dels=500 ins=500 upd=0.0010s cliques_upd=1096 repair=0.0027s rounds=16 cliques_rep=1217 UB=8.2395 LB=8.2000 gap=1.00482 |S|=25
+dumped ../data/snap_dumps/amazon_k4_replay_hybrid_b20.txt
+check batch=20 load_relerr=1.94e-15 cS=205 exact=205 | warm_global iters=7 prep=0.04s iter=0.20s LB=8.2000 | cold_global iters=9 iter=0.27s LB=8.2000 | ours avg/batch=0.0043s repairs=20/20 | exact_ub=8.239497 size=25 cold_prep=0.04s maxout=7 lam_range=303.454 cliques=146533
+reranks total=0
+memory state_graph=26.5MB state_vectors=24.9MB state_thread_scratch=160.7MB process_peak=503.5MB

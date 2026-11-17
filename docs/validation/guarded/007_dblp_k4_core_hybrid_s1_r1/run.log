@@ -1,0 +1,46 @@
+mode=core compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+audit_state batch=0 writes=42 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=101 max_witness=55
+stored_box batch=0 vertices=24 lower=0 upper=0 invalid=0
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+baseline_status batch=1 warm=certified cold=certified
+check batch=1 load_relerr=3.46e-16 cS=41 exact=41 | warm_global iters=3 prep=0.00s iter=0.00s LB=5.1250 | cold_global iters=7 iter=0.00s LB=5.1250 | ours avg/batch=0.0000s repairs=1/1 | exact_ub=5.133884 size=8 cold_prep=0.00s maxout=6 lam_range=9.156 cliques=48
+audit_bounds batch=1 UB=5.1338837818493133 LB=5.125 size=8
+audit_state batch=1 writes=162 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=101 max_witness=55
+stored_box batch=1 vertices=24 lower=0 upper=0 invalid=0
+affected batch=1 deleted=15 inserted=3 witness_deleted=14 witness_inserted=0
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=18 repair=0.0000s rounds=2 cliques_rep=96 UB=5.1339 LB=5.1250 gap=1.00173 |S|=8
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+baseline_status batch=2 warm=certified cold=certified
+check batch=2 load_relerr=4.43e-16 cS=32 exact=32 | warm_global iters=6 prep=0.00s iter=0.00s LB=4.0000 | cold_global iters=7 iter=0.00s LB=4.0000 | ours avg/batch=0.0000s repairs=2/2 | exact_ub=4.013144 size=8 cold_prep=0.00s maxout=6 lam_range=9.248 cliques=37
+audit_bounds batch=2 UB=4.0131439371325888 LB=4 size=8
+audit_state batch=2 writes=335 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=104 max_witness=55
+stored_box batch=2 vertices=24 lower=0 upper=0 invalid=0
+affected batch=2 deleted=11 inserted=0 witness_deleted=9 witness_inserted=0
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=11 repair=0.0000s rounds=5 cliques_rep=181 UB=4.0131 LB=4.0000 gap=1.00329 |S|=8
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+baseline_status batch=3 warm=certified cold=certified
+check batch=3 load_relerr=6.31e-16 cS=20 exact=20 | warm_global iters=5 prep=0.00s iter=0.00s LB=2.5000 | cold_global iters=7 iter=0.00s LB=2.5000 | ours avg/batch=0.0000s repairs=3/3 | exact_ub=2.510974 size=8 cold_prep=0.00s maxout=6 lam_range=9.437 cliques=23
+audit_bounds batch=3 UB=2.5109736118963304 LB=2.5 size=8
+audit_state batch=3 writes=492 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=104 max_witness=55
+stored_box batch=3 vertices=24 lower=0 upper=0 invalid=0
+affected batch=3 deleted=14 inserted=0 witness_deleted=12 witness_inserted=0
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=14 repair=0.0000s rounds=4 cliques_rep=92 UB=2.5110 LB=2.5000 gap=1.00439 |S|=8
+  global it=10 UB=2.3164 LB=2.2857 gap=1.01344 t=0.0s
+  global it=10 UB=2.3007 LB=2.2857 gap=1.00656 t=0.0s
+  global it=10 UB=2.3164 LB=2.2857 gap=1.01344 t=0.0s
+  fallback batch=4 reason=budget repair_spent=0.000s
+fallback graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=15 prep=0.00s iter=0.00s LB=2.2857 |S|=7
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+baseline_status batch=4 warm=certified cold=certified
+check batch=4 load_relerr=1.94e-16 cS=16 exact=16 | warm_global iters=12 prep=0.00s iter=0.00s LB=2.2857 | cold_global iters=12 iter=0.00s LB=2.2857 | ours avg/batch=0.0001s repairs=4/4 | exact_ub=2.297076 size=7 cold_prep=0.00s maxout=6 lam_range=28.039 cliques=22
+audit_bounds batch=4 UB=2.2970758872310433 LB=2.2857142857142856 size=7
+audit_state batch=4 writes=1187 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=111 max_witness=55
+stored_box batch=4 vertices=24 lower=0 upper=0 invalid=0
+affected batch=4 deleted=2 inserted=1 witness_deleted=2 witness_inserted=0
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=3 repair=0.0004s rounds=-2 cliques_rep=510 UB=2.2971 LB=2.2857 gap=1.00497 |S|=7
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=6.9MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

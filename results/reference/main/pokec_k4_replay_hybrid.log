@@ -1,0 +1,43 @@
+  global it=10 UB=1284.9916 LB=1179.9368 gap=1.08903 t=3.0s
+  global it=20 UB=1237.3897 LB=1214.3879 gap=1.01894 t=5.8s
+  global it=30 UB=1226.7990 LB=1214.6612 gap=1.00999 t=8.7s
+  global it=40 UB=1222.1087 LB=1214.6612 gap=1.00613 t=11.6s
+mode=replay compact=0
+init graph=../data/bin/soc-pokec-relationships.bin n=1632803 m=20071768 k=4 eps=0.010 threads=24 iters=46 prep=1.16s iter=13.37s LB=1214.6612 |S|=121
+init_total time=14.67s repair_budget=14.67s
+init_drift maxout=42 lam_range=306.207
+batch=1 dels=500 ins=500 upd=0.0029s cliques_upd=6595 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=2 dels=500 ins=500 upd=0.0024s cliques_upd=7461 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+  repair breakdown: refresh=0.001s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=3 dels=500 ins=500 upd=0.0025s cliques_upd=6887 repair=0.0022s rounds=1 cliques_rep=53110 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=4 dels=500 ins=500 upd=0.0024s cliques_upd=6490 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+  repair breakdown: refresh=0.001s (1 calls) relax=0.003s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=5 dels=500 ins=500 upd=0.0022s cliques_upd=7287 repair=0.0037s rounds=3 cliques_rep=134503 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=6 dels=500 ins=500 upd=0.0022s cliques_upd=6552 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=7 dels=500 ins=500 upd=0.0023s cliques_upd=6837 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=8 dels=500 ins=500 upd=0.0022s cliques_upd=6053 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+  repair breakdown: refresh=0.001s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=9 dels=500 ins=500 upd=0.0021s cliques_upd=5714 repair=0.0030s rounds=3 cliques_rep=130617 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+batch=10 dels=500 ins=500 upd=0.0022s cliques_upd=7619 repair=0.0000s rounds=0 cliques_rep=0 UB=1220.5121 LB=1214.6612 gap=1.00482 |S|=121
+  global it=10 UB=1284.9376 LB=1177.6170 gap=1.09113 t=3.0s
+  global it=20 UB=1237.4889 LB=1213.0000 gap=1.02019 t=5.9s
+  global it=30 UB=1226.8507 LB=1214.6612 gap=1.01004 t=8.8s
+dumped ../data/snap_dumps/pokec_k4_replay_hybrid_b10.txt
+check batch=10 load_relerr=1.68e-14 cS=146974 exact=146974 | warm_global iters=2 prep=1.16s iter=0.69s LB=1214.6612 | cold_global iters=31 iter=9.07s LB=1214.6612 | ours avg/batch=0.0032s repairs=3/10 | exact_ub=1220.512145 size=121 cold_prep=1.04s maxout=42 lam_range=306.207 cliques=22781004
+batch=11 dels=500 ins=500 upd=0.0041s cliques_upd=6842 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=12 dels=500 ins=500 upd=0.0039s cliques_upd=7277 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=13 dels=500 ins=500 upd=0.0042s cliques_upd=6178 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=14 dels=500 ins=500 upd=0.0033s cliques_upd=6417 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=15 dels=500 ins=500 upd=0.0029s cliques_upd=6723 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=16 dels=500 ins=500 upd=0.0028s cliques_upd=7075 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=17 dels=500 ins=500 upd=0.0037s cliques_upd=7143 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=18 dels=500 ins=500 upd=0.0029s cliques_upd=6524 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=19 dels=500 ins=500 upd=0.0029s cliques_upd=6556 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+batch=20 dels=500 ins=500 upd=0.0028s cliques_upd=6614 repair=0.0000s rounds=0 cliques_rep=0 UB=1223.4730 LB=1214.6612 gap=1.00725 |S|=121
+  global it=10 UB=1284.5578 LB=1179.9368 gap=1.08867 t=3.1s
+  global it=20 UB=1237.2926 LB=1213.2018 gap=1.01986 t=6.1s
+  global it=30 UB=1226.7103 LB=1214.6612 gap=1.00992 t=8.9s
+dumped ../data/snap_dumps/pokec_k4_replay_hybrid_b20.txt
+check batch=20 load_relerr=1.64e-14 cS=146974 exact=146974 | warm_global iters=2 prep=1.05s iter=0.72s LB=1214.6612 | cold_global iters=30 iter=8.95s LB=1214.6612 | ours avg/batch=0.0033s repairs=3/20 | exact_ub=1223.473008 size=121 cold_prep=1.09s maxout=42 lam_range=306.207 cliques=22779141
+reranks total=0
+memory state_graph=327.4MB state_vectors=114.5MB state_thread_scratch=695.4MB process_peak=4549.6MB

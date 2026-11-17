@@ -1,0 +1,63 @@
+{
+  "identity": {
+    "suite": "ablations",
+    "job": {
+      "dataset": "skitter",
+      "version": "guarded",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {
+        "KCDS_NOSPLIT": "1",
+        "KCDS_NOCHECK": "1"
+      },
+      "limit": 7200,
+      "arm": "noSplit",
+      "repeat": 1,
+      "name": "017_skitter_k4_replay_noSplit_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "52e6ab1cf90e526343606a9322cadd455a68052b0fe5216f7673c046440ce24b",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\guarded.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "KCDS_NOSPLIT": "1",
+      "KCDS_NOCHECK": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:30Z",
+  "exit_code": 0,
+  "wall_s": 0.02615910000167787,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 0,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "df190eb1d30955c545ccfdbd5062543cba84c6f2c392ff56ba16a768b010c1bb",
+  "log_sha256": "0b14c52e4463a26ba735190ed7a9100253f569bbcb7c6b897081b2bc0baf1d8f"
+}

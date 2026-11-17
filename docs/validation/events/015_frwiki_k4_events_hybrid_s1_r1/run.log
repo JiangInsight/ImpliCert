@@ -1,0 +1,21 @@
+  global it=10 UB=8.9551 LB=8.8889 gap=1.00745 t=0.0s
+events total=137 initial=129 edges=97 links=97
+mode=events compact=0
+init graph=<artifact>\runs\release-validation\input\fixture.ebin n=24 m=97 k=4 eps=0.010 threads=1 iters=13 prep=0.00s iter=0.00s LB=8.8889 |S|=9
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=7 lam_range=35.611
+baseline_status batch=1 warm=certified cold=certified
+check batch=1 load_relerr=1.99e-16 cS=80 exact=80 | warm_global iters=1 prep=0.00s iter=0.00s LB=8.8889 | cold_global iters=9 iter=0.00s LB=8.8889 | ours avg/batch=0.0000s repairs=0/1 | exact_ub=8.927510 size=9 cold_prep=0.00s maxout=7 lam_range=35.611 cliques=88
+batch=1 dels=0 ins=0 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=8.9275 LB=8.8889 gap=1.00434 |S|=9
+baseline_status batch=2 warm=certified cold=certified
+check batch=2 load_relerr=1.99e-16 cS=80 exact=80 | warm_global iters=1 prep=0.00s iter=0.00s LB=8.8889 | cold_global iters=9 iter=0.00s LB=8.8889 | ours avg/batch=0.0000s repairs=0/2 | exact_ub=8.927510 size=9 cold_prep=0.00s maxout=7 lam_range=35.611 cliques=88
+batch=2 dels=0 ins=0 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=8.9275 LB=8.8889 gap=1.00434 |S|=9
+baseline_status batch=3 warm=certified cold=certified
+check batch=3 load_relerr=1.99e-16 cS=80 exact=80 | warm_global iters=1 prep=0.00s iter=0.00s LB=8.8889 | cold_global iters=9 iter=0.00s LB=8.8889 | ours avg/batch=0.0000s repairs=0/3 | exact_ub=8.927510 size=9 cold_prep=0.00s maxout=7 lam_range=35.611 cliques=88
+batch=3 dels=0 ins=0 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=8.9275 LB=8.8889 gap=1.00434 |S|=9
+baseline_status batch=4 warm=certified cold=certified
+check batch=4 load_relerr=1.99e-16 cS=80 exact=80 | warm_global iters=1 prep=0.00s iter=0.00s LB=8.8889 | cold_global iters=9 iter=0.00s LB=8.8889 | ours avg/batch=0.0000s repairs=0/4 | exact_ub=8.927510 size=9 cold_prep=0.00s maxout=7 lam_range=35.611 cliques=88
+batch=4 dels=0 ins=0 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=8.9275 LB=8.8889 gap=1.00434 |S|=9
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=6.8MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

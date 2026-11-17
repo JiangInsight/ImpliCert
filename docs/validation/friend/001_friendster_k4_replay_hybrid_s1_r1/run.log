@@ -1,0 +1,167 @@
+phase=read_graph
+phase=compact_holdout
+phase=orientation
+phase=cold_start
+  global(c) it=1 UB=913.5000 LB=913.5000 gap=1.00000 t=0.0s
+mode=replay compact=1
+init graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=735 k=4 eps=0.010 threads=1 iters=1 prep=0.00s iter=0.00s LB=913.5000 |S|=30
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=29 lam_range=0.000
+audit_state batch=0 writes=0 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=0 vertices=630 lower=0 upper=0 invalid=0
+trace batch=1 op=- edges=2:8,3:9,0:29,13:14,10:26,21:24,1:8,5:20,2:9,7:21,4:9,7:26,1:5,8:11,1:11,6:11,11:15,8:10,13:24,16:27,11:21,7:29,1:16,1:18,0:13,3:14,1:25,4:18,12:24,14:26,13:15,19:24,
+target_before_repair batch=1 size=30 distinct_deleted_edges=32 deleted_cliques=10027 witness_deleted=10027 witness_inserted=0 cS=17378 UB=714.25 LB=579.26666666666665 trigger=1 upd_s=0.001301100
+local_outcome batch=1 code=-2 local_rounds=1 prior_UB=913.5 prior_LB=913.5
+  global(c) it=1 UB=714.2500 LB=579.2667 gap=1.23302 t=0.0s
+  global(c) it=2 UB=603.5806 LB=579.2667 gap=1.04197 t=0.0s
+  global(c) it=3 UB=585.2671 LB=579.2667 gap=1.01036 t=0.0s
+  global(c) it=4 UB=581.0903 LB=579.2667 gap=1.00315 t=0.0s
+  fallback batch=1 reason=budget repair_spent=0.001s
+fallback graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=703 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=579.2667 |S|=30
+target_repair_finished batch=1 rounds=-2 repair_s=0.001689700 UB=581.09030486600136 LB=579.26666666666665
+stress_post batch=1 workload=delete local_rounds=1 prior_size=30 prior_count=27405 returned_count=17378 plant_size=0 plant_count=0 returned_plant_overlap=0 service_s=0.002990800 sampled_service_peak_ws_bytes=8048640 ws_samples=2 current_ws_bytes=8048640 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=1 UB=581.09030486600136 LB=579.26666666666665 size=30
+audit_state batch=1 writes=118 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=1 vertices=630 lower=0 upper=0 invalid=0
+affected batch=1 deleted=10027 inserted=0 witness_deleted=10027 witness_inserted=0
+batch=1 dels=32 ins=0 upd=0.0013s cliques_upd=10027 repair=0.0017s rounds=-2 cliques_rep=17378 UB=581.0903 LB=579.2667 gap=1.00315 |S|=30
+trace batch=2 op=- edges=8:17,8:25,19:28,6:10,3:15,2:20,1:2,7:14,9:22,5:11,0:14,9:12,11:16,8:23,10:27,7:15,3:5,20:29,15:24,2:22,9:26,9:13,2:21,10:21,9:16,17:24,8:9,24:25,2:4,11:23,5:7,6:8,
+target_before_repair batch=2 size=30 distinct_deleted_edges=32 deleted_cliques=6553 witness_deleted=6553 witness_inserted=0 cS=10825 UB=440.72035176945576 LB=360.83333333333331 trigger=1 upd_s=0.000797700
+local_outcome batch=2 code=-2 local_rounds=1 prior_UB=581.09030486600136 prior_LB=579.26666666666665
+  global(c) it=1 UB=481.0000 LB=360.8333 gap=1.33303 t=0.0s
+  global(c) it=2 UB=390.4396 LB=360.8333 gap=1.08205 t=0.0s
+  global(c) it=3 UB=370.3855 LB=360.8333 gap=1.02647 t=0.0s
+  global(c) it=4 UB=365.0434 LB=360.8333 gap=1.01167 t=0.0s
+  global(c) it=5 UB=362.6917 LB=360.8333 gap=1.00515 t=0.0s
+  global(c) it=6 UB=361.6395 LB=360.8333 gap=1.00223 t=0.0s
+  fallback batch=2 reason=budget repair_spent=0.000s
+fallback graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=671 k=4 eps=0.010 threads=1 iters=6 prep=0.00s iter=0.00s LB=360.8333 |S|=30
+target_repair_finished batch=2 rounds=-2 repair_s=0.002058700 UB=361.63949007571733 LB=360.83333333333331
+stress_post batch=2 workload=delete local_rounds=1 prior_size=30 prior_count=17378 returned_count=10825 plant_size=0 plant_count=0 returned_plant_overlap=0 service_s=0.002856400 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=2 UB=361.63949007571733 LB=360.83333333333331 size=30
+audit_state batch=2 writes=298 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=2 vertices=630 lower=0 upper=0 invalid=0
+affected batch=2 deleted=6553 inserted=0 witness_deleted=6553 witness_inserted=0
+batch=2 dels=32 ins=0 upd=0.0008s cliques_upd=6553 repair=0.0021s rounds=-2 cliques_rep=10825 UB=361.6395 LB=360.8333 gap=1.00223 |S|=30
+trace batch=3 op=- edges=0:7,16:29,14:16,20:26,3:17,0:24,8:21,16:22,13:25,22:29,3:11,5:22,0:12,1:22,2:26,25:28,1:7,8:22,10:25,14:28,7:10,20:27,18:19,2:10,1:17,5:12,8:29,3:25,6:25,2:17,6:27,17:21,
+target_before_repair batch=3 size=30 distinct_deleted_edges=32 deleted_cliques=4662 witness_deleted=4662 witness_inserted=0 cS=6163 UB=276.05329212110564 LB=205.43333333333334 trigger=1 upd_s=0.000600200
+local_outcome batch=3 code=-2 local_rounds=2 prior_UB=361.63949007571733 prior_LB=360.83333333333331
+  global(c) it=1 UB=348.7500 LB=205.4333 gap=1.69763 t=0.0s
+  global(c) it=2 UB=230.4773 LB=205.4333 gap=1.12191 t=0.0s
+  global(c) it=3 UB=213.7673 LB=205.4333 gap=1.04057 t=0.0s
+  global(c) it=4 UB=209.4003 LB=205.4333 gap=1.01931 t=0.0s
+  global(c) it=5 UB=207.3165 LB=205.4333 gap=1.00917 t=0.0s
+  global(c) it=6 UB=206.3545 LB=205.4333 gap=1.00448 t=0.0s
+  fallback batch=3 reason=budget repair_spent=0.001s
+fallback graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=639 k=4 eps=0.010 threads=1 iters=6 prep=0.00s iter=0.00s LB=205.4333 |S|=30
+target_repair_finished batch=3 rounds=-2 repair_s=0.002126600 UB=206.35451164088329 LB=205.43333333333334
+stress_post batch=3 workload=delete local_rounds=2 prior_size=30 prior_count=10825 returned_count=6163 plant_size=0 plant_count=0 returned_plant_overlap=0 service_s=0.002726800 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=3 UB=206.35451164088329 LB=205.43333333333334 size=30
+audit_state batch=3 writes=500 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=3 vertices=630 lower=0 upper=0 invalid=0
+affected batch=3 deleted=4662 inserted=0 witness_deleted=4662 witness_inserted=0
+batch=3 dels=32 ins=0 upd=0.0006s cliques_upd=4662 repair=0.0021s rounds=-2 cliques_rep=12318 UB=206.3545 LB=205.4333 gap=1.00448 |S|=30
+trace batch=4 op=- edges=6:29,23:26,6:28,14:22,8:18,11:28,5:14,15:17,1:20,23:27,21:23,12:23,12:17,9:24,5:23,21:22,10:11,13:21,16:24,7:27,27:29,0:26,1:15,22:26,26:28,20:23,11:12,18:20,22:25,20:28,1:21,1:27,
+target_before_repair batch=4 size=30 distinct_deleted_edges=32 deleted_cliques=2873 witness_deleted=2873 witness_inserted=0 cS=3290 UB=153.58707101159393 LB=109.66666666666667 trigger=1 upd_s=0.000439000
+local_outcome batch=4 code=-2 local_rounds=2 prior_UB=206.35451164088329 prior_LB=205.43333333333334
+  global(c) it=1 UB=200.5000 LB=109.6667 gap=1.82827 t=0.0s
+  global(c) it=2 UB=121.7071 LB=109.6667 gap=1.10979 t=0.0s
+  global(c) it=3 UB=114.7445 LB=109.6667 gap=1.04630 t=0.0s
+  global(c) it=4 UB=111.8422 LB=109.6667 gap=1.01984 t=0.0s
+  global(c) it=5 UB=110.6736 LB=109.6667 gap=1.00918 t=0.0s
+  global(c) it=6 UB=110.2060 LB=109.6667 gap=1.00492 t=0.0s
+  fallback batch=4 reason=budget repair_spent=0.000s
+fallback graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=607 k=4 eps=0.010 threads=1 iters=6 prep=0.00s iter=0.00s LB=109.6667 |S|=30
+target_repair_finished batch=4 rounds=-2 repair_s=0.001755000 UB=110.20597564423507 LB=109.66666666666667
+stress_post batch=4 workload=delete local_rounds=2 prior_size=30 prior_count=6163 returned_count=3290 plant_size=0 plant_count=0 returned_plant_overlap=0 service_s=0.002194000 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=4 UB=110.20597564423507 LB=109.66666666666667 size=30
+audit_state batch=4 writes=709 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=4 vertices=630 lower=0 upper=0 invalid=0
+affected batch=4 deleted=2873 inserted=0 witness_deleted=2873 witness_inserted=0
+batch=4 dels=32 ins=0 upd=0.0004s cliques_upd=2873 repair=0.0018s rounds=-2 cliques_rep=6580 UB=110.2060 LB=109.6667 gap=1.00492 |S|=30
+trace batch=5 op=- edges=9:29,13:22,10:28,0:20,12:13,13:19,4:26,4:22,17:25,6:22,9:17,8:16,19:22,15:19,11:13,14:17,1:23,12:14,16:18,4:15,3:8,3:26,0:2,0:8,7:18,12:25,4:14,8:19,10:29,6:7,10:22,0:21,
+target_before_repair batch=5 size=30 distinct_deleted_edges=32 deleted_cliques=1676 witness_deleted=1676 witness_inserted=0 cS=1614 UB=75.765365008684824 LB=53.799999999999997 trigger=1 upd_s=0.000310800
+local_outcome batch=5 code=-2 local_rounds=4 prior_UB=110.20597564423507 prior_LB=109.66666666666667
+  global(c) it=1 UB=87.2500 LB=53.8621 gap=1.61988 t=0.0s
+  global(c) it=2 UB=61.4525 LB=53.8621 gap=1.14092 t=0.0s
+  global(c) it=3 UB=57.5066 LB=53.8621 gap=1.06766 t=0.0s
+  global(c) it=4 UB=55.7772 LB=53.8621 gap=1.03556 t=0.0s
+  global(c) it=5 UB=54.9716 LB=53.8621 gap=1.02060 t=0.0s
+  global(c) it=6 UB=54.5691 LB=53.8621 gap=1.01313 t=0.0s
+  global(c) it=7 UB=54.3561 LB=53.8621 gap=1.00917 t=0.0s
+  global(c) it=8 UB=54.2255 LB=53.8621 gap=1.00675 t=0.0s
+  global(c) it=9 UB=54.1464 LB=53.8621 gap=1.00528 t=0.0s
+  global(c) it=10 UB=54.0951 LB=53.8621 gap=1.00433 t=0.0s
+  fallback batch=5 reason=budget repair_spent=0.001s
+fallback graph=<artifact>\runs\release-validation\input\stress.bin n=630 m=575 k=4 eps=0.010 threads=1 iters=10 prep=0.00s iter=0.00s LB=53.8621 |S|=29
+target_repair_finished batch=5 rounds=-2 repair_s=0.001948300 UB=54.095077489767476 LB=53.862068965517238
+stress_post batch=5 workload=delete local_rounds=4 prior_size=30 prior_count=3290 returned_count=1562 plant_size=0 plant_count=0 returned_plant_overlap=0 service_s=0.002259100 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=5 UB=54.095077489767476 LB=53.862068965517238 size=29
+audit_state batch=5 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=5 vertices=630 lower=0 upper=0 invalid=0
+affected batch=5 deleted=1676 inserted=0 witness_deleted=1676 witness_inserted=0
+batch=5 dels=32 ins=0 upd=0.0003s cliques_upd=1676 repair=0.0019s rounds=-2 cliques_rep=6456 UB=54.0951 LB=53.8621 gap=1.00433 |S|=29
+plant_design n=630 q=31 prior_witness_union=30 initial_UB=913.5 preplant_UB=54.095077489767476 preplant_LB=53.862068965517238 min_degree=1 max_degree=1 selected=516,229,40,133,213,106,390,80,413,598,392,400,192,547,46,39,576,121,199,288,420,145,261,405,241,204,364,481,329,283,216,
+trace batch=6 op=+ edges=229:516,40:516,40:229,133:516,133:229,40:133,213:516,213:229,40:213,133:213,106:516,106:229,40:106,106:133,106:213,390:516,229:390,40:390,133:390,213:390,106:390,80:516,80:229,40:80,80:133,80:213,80:106,80:390,413:516,229:413,40:413,133:413,213:413,106:413,390:413,80:413,516:598,229:598,40:598,133:598,213:598,106:598,390:598,80:598,413:598,392:516,229:392,40:392,133:392,213:392,106:392,390:392,80:392,392:413,392:598,400:516,229:400,40:400,133:400,213:400,106:400,390:400,80:400,400:413,400:598,392:400,192:516,192:229,40:192,133:192,192:213,106:192,192:390,80:192,192:413,192:598,192:392,192:400,
+target_before_repair batch=6 size=29 distinct_deleted_edges=0 deleted_cliques=0 witness_deleted=0 witness_inserted=0 cS=1562 UB=55 LB=53.862068965517238 trigger=1 upd_s=0.000284000
+local_outcome batch=6 code=1 local_rounds=1 prior_UB=54.095077489767476 prior_LB=53.862068965517238
+target_repair_finished batch=6 rounds=1 repair_s=0.000082300 UB=55 LB=55
+stress_post batch=6 workload=plant local_rounds=1 prior_size=29 prior_count=1562 returned_count=715 plant_size=13 plant_count=715 returned_plant_overlap=13 service_s=0.000366300 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=6 UB=55 LB=55 size=13
+audit_state batch=6 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=6 vertices=630 lower=0 upper=0 invalid=0
+affected batch=6 deleted=0 inserted=715 witness_deleted=0 witness_inserted=0
+batch=6 dels=0 ins=78 upd=0.0003s cliques_upd=715 repair=0.0001s rounds=1 cliques_rep=0 UB=55.0000 LB=55.0000 gap=1.00000 |S|=13
+trace batch=7 op=+ edges=516:547,229:547,40:547,133:547,213:547,106:547,390:547,80:547,413:547,547:598,392:547,400:547,192:547,46:516,46:229,40:46,46:133,46:213,46:106,46:390,46:80,46:413,46:598,46:392,46:400,46:192,46:547,39:516,39:229,39:40,39:133,39:213,39:106,39:390,39:80,39:413,39:598,39:392,39:400,39:192,39:547,39:46,516:576,229:576,40:576,133:576,213:576,106:576,390:576,80:576,413:576,576:598,392:576,400:576,192:576,547:576,46:576,39:576,121:516,121:229,40:121,121:133,121:213,106:121,121:390,80:121,121:413,121:598,121:392,121:400,121:192,121:547,46:121,39:121,121:576,199:516,199:229,40:199,133:199,199:213,106:199,199:390,80:199,199:413,199:598,199:392,199:400,192:199,199:547,46:199,39:199,199:576,121:199,
+target_before_repair batch=7 size=13 distinct_deleted_edges=0 deleted_cliques=0 witness_deleted=0 witness_inserted=0 cS=715 UB=204 LB=55 trigger=1 upd_s=0.000948500
+local_outcome batch=7 code=1 local_rounds=1 prior_UB=55 prior_LB=55
+target_repair_finished batch=7 rounds=1 repair_s=0.000049200 UB=204 LB=204
+stress_post batch=7 workload=plant local_rounds=1 prior_size=13 prior_count=715 returned_count=3876 plant_size=19 plant_count=3876 returned_plant_overlap=19 service_s=0.000997700 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=7 UB=204 LB=204 size=19
+audit_state batch=7 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=7 vertices=630 lower=0 upper=0 invalid=0
+affected batch=7 deleted=0 inserted=3161 witness_deleted=0 witness_inserted=0
+batch=7 dels=0 ins=93 upd=0.0009s cliques_upd=3161 repair=0.0000s rounds=1 cliques_rep=0 UB=204.0000 LB=204.0000 gap=1.00000 |S|=19
+trace batch=8 op=+ edges=288:516,229:288,40:288,133:288,213:288,106:288,288:390,80:288,288:413,288:598,288:392,288:400,192:288,288:547,46:288,39:288,288:576,121:288,199:288,420:516,229:420,40:420,133:420,213:420,106:420,390:420,80:420,413:420,420:598,392:420,400:420,192:420,420:547,46:420,39:420,420:576,121:420,199:420,288:420,145:516,145:229,40:145,133:145,145:213,106:145,145:390,80:145,145:413,145:598,145:392,145:400,145:192,145:547,46:145,39:145,145:576,121:145,145:199,145:288,145:420,261:516,229:261,40:261,133:261,213:261,106:261,261:390,80:261,261:413,261:598,261:392,261:400,192:261,261:547,46:261,39:261,261:576,121:261,199:261,261:288,261:420,145:261,405:516,229:405,40:405,133:405,213:405,106:405,390:405,80:405,405:413,405:598,392:405,400:405,192:405,405:547,46:405,39:405,405:576,121:405,199:405,288:405,405:420,145:405,261:405,
+target_before_repair batch=8 size=19 distinct_deleted_edges=0 deleted_cliques=0 witness_deleted=0 witness_inserted=0 cS=3876 UB=442.75 LB=204 trigger=1 upd_s=0.001868800
+local_outcome batch=8 code=1 local_rounds=1 prior_UB=204 prior_LB=204
+target_repair_finished batch=8 rounds=1 repair_s=0.000081900 UB=442.75 LB=442.75
+stress_post batch=8 workload=plant local_rounds=1 prior_size=19 prior_count=3876 returned_count=10626 plant_size=24 plant_count=10626 returned_plant_overlap=24 service_s=0.001950700 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=8 UB=442.75 LB=442.75 size=24
+audit_state batch=8 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=8 vertices=630 lower=0 upper=0 invalid=0
+affected batch=8 deleted=0 inserted=6750 witness_deleted=0 witness_inserted=0
+batch=8 dels=0 ins=105 upd=0.0019s cliques_upd=6750 repair=0.0001s rounds=1 cliques_rep=0 UB=442.7500 LB=442.7500 gap=1.00000 |S|=24
+trace batch=9 op=+ edges=241:516,229:241,40:241,133:241,213:241,106:241,241:390,80:241,241:413,241:598,241:392,241:400,192:241,241:547,46:241,39:241,241:576,121:241,199:241,241:288,241:420,145:241,241:261,241:405,204:516,204:229,40:204,133:204,204:213,106:204,204:390,80:204,204:413,204:598,204:392,204:400,192:204,204:547,46:204,39:204,204:576,121:204,199:204,204:288,204:420,145:204,204:261,204:405,204:241,364:516,229:364,40:364,133:364,213:364,106:364,364:390,80:364,364:413,364:598,364:392,364:400,192:364,364:547,46:364,39:364,364:576,121:364,199:364,288:364,364:420,145:364,261:364,364:405,241:364,204:364,
+target_before_repair batch=9 size=24 distinct_deleted_edges=0 deleted_cliques=0 witness_deleted=0 witness_inserted=0 cS=10626 UB=650 LB=442.75 trigger=1 upd_s=0.001406100
+local_outcome batch=9 code=1 local_rounds=1 prior_UB=442.75 prior_LB=442.75
+target_repair_finished batch=9 rounds=1 repair_s=0.000106200 UB=650 LB=650
+stress_post batch=9 workload=plant local_rounds=1 prior_size=24 prior_count=10626 returned_count=17550 plant_size=27 plant_count=17550 returned_plant_overlap=27 service_s=0.001512300 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=9 UB=650 LB=650 size=27
+audit_state batch=9 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=27405 max_witness=27405
+stored_box batch=9 vertices=630 lower=0 upper=0 invalid=0
+affected batch=9 deleted=0 inserted=6924 witness_deleted=0 witness_inserted=0
+batch=9 dels=0 ins=75 upd=0.0014s cliques_upd=6924 repair=0.0001s rounds=1 cliques_rep=0 UB=650.0000 LB=650.0000 gap=1.00000 |S|=27
+trace batch=10 op=+ edges=481:516,229:481,40:481,133:481,213:481,106:481,390:481,80:481,413:481,481:598,392:481,400:481,192:481,481:547,46:481,39:481,481:576,121:481,199:481,288:481,420:481,145:481,261:481,405:481,241:481,204:481,364:481,329:516,229:329,40:329,133:329,213:329,106:329,329:390,80:329,329:413,329:598,329:392,329:400,192:329,329:547,46:329,39:329,329:576,121:329,199:329,288:329,329:420,145:329,261:329,329:405,241:329,204:329,329:364,329:481,283:516,229:283,40:283,133:283,213:283,106:283,283:390,80:283,283:413,283:598,283:392,283:400,192:283,283:547,46:283,39:283,283:576,121:283,199:283,283:288,283:420,145:283,261:283,283:405,241:283,204:283,283:364,283:481,283:329,216:516,216:229,40:216,133:216,213:216,106:216,216:390,80:216,216:413,216:598,216:392,216:400,192:216,216:547,46:216,39:216,216:576,121:216,199:216,216:288,216:420,145:216,216:261,216:405,216:241,204:216,216:364,216:481,216:329,216:283,
+target_before_repair batch=10 size=27 distinct_deleted_edges=0 deleted_cliques=0 witness_deleted=0 witness_inserted=0 cS=17550 UB=1015 LB=650 trigger=1 upd_s=0.003127300
+local_outcome batch=10 code=1 local_rounds=1 prior_UB=650 prior_LB=650
+target_repair_finished batch=10 rounds=1 repair_s=0.000200700 UB=1015 LB=1015
+stress_post batch=10 workload=plant local_rounds=1 prior_size=27 prior_count=17550 returned_count=31465 plant_size=31 plant_count=31465 returned_plant_overlap=31 service_s=0.003328000 sampled_service_peak_ws_bytes=8052736 ws_samples=2 current_ws_bytes=8052736 cumulative_peak_ws_bytes=8069120
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+audit_bounds batch=10 UB=1015 LB=1015 size=31
+audit_state batch=10 writes=1090 box_lo=0 box_hi=0 clipped=0 nan_proposals=0 inf_proposals=0 invalid_stored=0 max_graph_clique_bound=40183 max_witness=31465
+stored_box batch=10 vertices=630 lower=0 upper=0 invalid=0
+affected batch=10 deleted=0 inserted=13915 witness_deleted=0 witness_inserted=0
+batch=10 dels=0 ins=114 upd=0.0031s cliques_upd=13915 repair=0.0002s rounds=1 cliques_rep=0 UB=1015.0000 LB=1015.0000 gap=1.00000 |S|=31
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.1MB state_thread_scratch=1.0MB process_peak=7.7MB
+memcap: limit_mb=32768 peak_mb=3 exit=0

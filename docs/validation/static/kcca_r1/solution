@@ -1,0 +1,40 @@
+Computing for k = 4  Max_iter is: 0
+Reading graph from file <artifact>\runs\release-validation\main\004_dblp_k4_replay_hybrid_s1_r1\snapshot_b4.txt
+Graph size |V| = 24, |E| = 83
+Building graph structure
+max deg = 6
+Building finished
+Graph size after decompostion |V| = 24, |E| = 83
+Running time for building graphs: 0 milliseconds.
+Building sct for vertex 0
+Indexing time  3946 milliseconds.
+Iteration 0
+r_max =  4.28571
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0714285714
+Total running time after iteration: 1  3946 milliseconds.
+r_max =  4.28571
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0714285714
+Total running time after iteration: 2  3946 milliseconds.
+r_max =  4.24286
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0607142857
+Total running time after iteration: 4  3951 milliseconds.
+r_max =  4.13889
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0347222222
+Total running time after iteration: 8  3951 milliseconds.
+r_max =  4.09349
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0233718487
+Total running time after iteration: 16  3951 milliseconds.
+r_max =  4.04031
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0100784632
+Total running time after iteration: 32  3952 milliseconds.
+r_max =  4.01676
+Maximum density is 4.0000000000
+Approxiamtion rate is 1.0041895604
+Total running time after iteration: 64  3952 milliseconds.
+Total running time  3952 milliseconds.

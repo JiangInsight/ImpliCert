@@ -1,0 +1,13 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=17 repair=0.0000s rounds=2 cliques_rep=98 UB=5.1340 LB=5.1250 gap=1.00175 |S|=8
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=2 absorbed=11 split=0
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=9 repair=0.0001s rounds=7 cliques_rep=373 UB=4.0195 LB=4.0000 gap=1.00487 |S|=8
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00487 |S|=8
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=1 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00487 |S|=8
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=6.8MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

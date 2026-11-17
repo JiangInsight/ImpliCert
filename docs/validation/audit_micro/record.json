@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "binary_sha256": "c3cceec68240456c6b7a67789485a7d857e2718542fbe08cbdb8a4a62a5860ef",
+    "command": [
+      "<artifact>\\build\\audit_micro.exe"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 120
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:14Z",
+  "exit_code": 0,
+  "wall_s": 0.06350009999005124,
+  "original_log_sha256": "28ebbdb2701f93fc5e14513cff49bca9e0f26248bda78de1c2658f80ef066b59",
+  "log_sha256": "172db14e85af836e5d4bc739badccbd559e2be98889af9e76af7936a2b227de3"
+}

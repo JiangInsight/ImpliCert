@@ -1,0 +1,25 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+work batch=1 arm=local input_hash=314d0fa337a66f4d triggered=1 pre_ub=5.6980203219219305 pre_lb=5.125 post_ub=5.1339656407266387 post_lb=5.125 update_s=0.000020100 repair_s=0.000052600 full_passes=0 full_visits=0 prefix_visits=41 local_visits=98
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+moves b=1 first_s=0.000024900 newton_s=0.000000000 absorber_s=0.000000000 histogram_loop_s=0.000000000 first_visits=98 newton_visits=0 absorber_visits=0
+check batch=1 load_relerr=1.731e-16 cS=41 exact=41 exact_ub=5.13396564072664 size=8 cliques=49
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=17 repair=0.0001s rounds=2 cliques_rep=98 UB=5.1340 LB=5.1250 gap=1.00175 |S|=8
+work batch=2 arm=local input_hash=6574fbaf8690c0b8 triggered=1 pre_ub=5.1295805280830313 pre_lb=4 post_ub=4.0195196066204657 post_lb=4 update_s=0.000008800 repair_s=0.000288100 full_passes=0 full_visits=0 prefix_visits=68 local_visits=813
+  repair breakdown: refresh=0.000s (2 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=7 absorbed=41 split=0
+moves b=2 first_s=0.000031000 newton_s=0.000124400 absorber_s=0.000031600 histogram_loop_s=0.000007000 first_visits=196 newton_visits=565 absorber_visits=52
+check batch=2 load_relerr=3.460e-16 cS=32 exact=32 exact_ub=4.01951960662047 size=8 cliques=40
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=9 repair=0.0003s rounds=12 cliques_rep=813 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+work batch=3 arm=local input_hash=e18767d1a4bedef8 triggered=0 pre_ub=4.0195196066204657 pre_lb=4 post_ub=4.0195196066204657 post_lb=4 update_s=0.000001800 repair_s=0.000000100 full_passes=0 full_visits=0 prefix_visits=0 local_visits=0
+moves b=3 first_s=0.000000000 newton_s=0.000000000 absorber_s=0.000000000 histogram_loop_s=0.000000000 first_visits=0 newton_visits=0 absorber_visits=0
+check batch=3 load_relerr=3.460e-16 cS=32 exact=32 exact_ub=4.01951960662047 size=8 cliques=40
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+work batch=4 arm=local input_hash=30522aaeba07d911 triggered=0 pre_ub=4.0195196066204657 pre_lb=4 post_ub=4.0195196066204657 post_lb=4 update_s=0.000002300 repair_s=0.000000100 full_passes=0 full_visits=0 prefix_visits=0 local_visits=0
+moves b=4 first_s=0.000000000 newton_s=0.000000000 absorber_s=0.000000000 histogram_loop_s=0.000000000 first_visits=0 newton_visits=0 absorber_visits=0
+check batch=4 load_relerr=3.460e-16 cS=32 exact=32 exact_ub=4.01951960662047 size=8 cliques=41
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=1 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=7.3MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

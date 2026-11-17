@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "binary_sha256": "da37d41c39274c99bf927ca12a1bf96cf27ada09ee2a4576f00055f6acb9b3c9",
+    "command": [
+      "<artifact>\\build\\test_absorber.exe"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 120
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:14Z",
+  "exit_code": 0,
+  "wall_s": 0.2008423000224866,
+  "original_log_sha256": "d4cf5452e7dcb45f9aa6b71fb389c4513441b6eba526d7300abe4f1e2968fb41",
+  "log_sha256": "7d935382d87d232521c1b1b3f1479c644d8b4141574851cd3a7b34bfcebd9fd9"
+}

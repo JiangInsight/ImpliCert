@@ -1,0 +1,31 @@
+{
+  "identity": {
+    "baseline": "ccas",
+    "input_sha256": {
+      "snapshot_b4.txt": "6230fe911c193a86be526481c535eea5331e3844901b174d4934d71ff65213a2"
+    },
+    "binary_sha256": "1ed04992ee026dce2a950e935ae35d04006916a8a170d0fc8c16260adb4f0a9d",
+    "epsilon": "0.01",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\ccas.exe",
+      "<artifact>\\runs\\release-validation\\main\\004_dblp_k4_replay_hybrid_s1_r1\\snapshot_b4.txt",
+      "4",
+      "0",
+      "0.009900990099009901",
+      "6"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:36Z",
+  "exit_code": 0,
+  "wall_s": 0.3778451000107452,
+  "original_log_sha256": "e49dea7e4d0dbd4acd332d14f597855f006bffc72b416ab6a52873a4b1c40b35",
+  "log_sha256": "4f3fca4ca879d7465851036fb998e155181a6b853d000f280172e6791118f4db"
+}

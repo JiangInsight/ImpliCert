@@ -1,0 +1,28 @@
+{
+  "compiler": "MSVC x64",
+  "command": [
+    "cl",
+    "/nologo",
+    "/O2",
+    "/std:c++20",
+    "/openmp:llvm",
+    "/EHsc",
+    "/I<artifact>\\src",
+    "<artifact>\\versions\\profile\\main.cpp",
+    "/Fe:profile.exe",
+    "/link",
+    "Psapi.lib",
+    "/STACK:268435456"
+  ],
+  "sources": {
+    "src\\absorber_claim.hpp": "c7d95c208d5abd5dc8f3c8ea09c8948ddd108db35eef0f67a72b8ce81d131744",
+    "src\\barrier.hpp": "b22a6470ef6947a63da27eb4ab24f56733c89c40ce70f3b04e777bdf2c9fc818",
+    "src\\cliques.hpp": "fd639bea455fad54067622a4c720723571fb815a8854f8ad071a432ba550ba90",
+    "src\\export_snapshot.hpp": "0be73872be125593640c1affb4210c97b18f469fd6dd3acbee067da2af8a0782",
+    "src\\graph.hpp": "7aa1ed64e3803440946ae385a7f2da32ca7bd5f930d91c22477c3119eb22b590",
+    "versions\\profile\\cliques.hpp": "405eb179fbd344c1abb5422bfbaf44e055409d15858eb3dd1b0e8bae3c2b001c",
+    "versions\\profile\\graph.hpp": "dc5ce61992a450a420ddbc6e9122fd989803073b5827b0b7ed0bd9d4d46906dd",
+    "versions\\profile\\main.cpp": "a3bb17f47fe48cb98e0c5cc029ab4e46270d2d4d8186be02cfd35499bd4644fc"
+  },
+  "binary_sha256": "780c6fa74457dde61b05d37461bf75b9ab7d18717abc90be9800a57d1e2ce466"
+}

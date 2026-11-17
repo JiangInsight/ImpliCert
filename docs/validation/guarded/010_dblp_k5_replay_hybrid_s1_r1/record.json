@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "guarded",
+    "job": {
+      "dataset": "dblp",
+      "version": "guarded_audit",
+      "k": 5,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "010_dblp_k5_replay_hybrid_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "cc4120c6da69b5a25ae7e47533b2968bbef9b2cbc9ea1f32e192c110f3cf637a",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\guarded_audit.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "5",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:24Z",
+  "exit_code": 0,
+  "wall_s": 0.030029700021259487,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "483b2b19d05d8c157e3c0614c5f48b422467da5d02ade5141dc4e7efb988f7a7",
+  "log_sha256": "c24bb0cac9f58f6a5a744fa1844479d3107b2f6c51b2f0b29492a6d6799c3304"
+}

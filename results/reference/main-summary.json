@@ -1,0 +1,137 @@
+[
+  {
+    "dataset": "enron",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.131745,
+    "max_maintenance_s": 0.3915,
+    "archived_log_sha256": "004bb4fdf1c63f30c15bc1a9477f89278110d051a96f4aff561b487186b2b33d",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "astro",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.017055,
+    "max_maintenance_s": 0.025500000000000002,
+    "archived_log_sha256": "13f3a0d127d59104e7e6addf52c4943c07bbdef4f95b9c1a4edd2696e6901b95",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "amazon",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.00432,
+    "max_maintenance_s": 0.0194,
+    "archived_log_sha256": "a0fcc26266058f438aefaa4d6109102f2f930389ac3c30d92cf85f8978fddaf9",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "dblp",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.009245,
+    "max_maintenance_s": 0.0121,
+    "archived_log_sha256": "7981355022b8b6e640d05c538d67284bebcaf0cfe073e0126b893478e6da7297",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "youtube",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.09965,
+    "max_maintenance_s": 0.2241,
+    "archived_log_sha256": "545f6275d139a038f32fc377d75a517e940a499acbaa3dde0fac4a0f6ec28a5d",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "google",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.00497,
+    "max_maintenance_s": 0.0195,
+    "archived_log_sha256": "757fd9cfbfeba758c770daee6b90754f9b2d506085b0cd92b7c862a752c9f010",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "berkstan",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.218725,
+    "max_maintenance_s": 2.0017,
+    "archived_log_sha256": "8213504cf4afa4b363a20bab503b3cf3f71bcb2d6a65fb4019b62e1c7c270e18",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "skitter",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.047175,
+    "max_maintenance_s": 0.332,
+    "archived_log_sha256": "9089a386ad1a3fd7754fee2f50ed1bd4ca27118d246ed48aeed851f7087fdbcb",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "patents",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.001825,
+    "max_maintenance_s": 0.0048,
+    "archived_log_sha256": "70cf8a27a955585ca23a623175d6f6c9afff336849c1e9c3370b213f3554a075",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "pokec",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.00329,
+    "max_maintenance_s": 0.005900000000000001,
+    "archived_log_sha256": "0f403aa376f49c87fa421c3e7c6c94d8163d314d2f6cd2b308b1f2d121ac7ab7",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "lj",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.09285,
+    "max_maintenance_s": 0.2437,
+    "archived_log_sha256": "7c89223ce484e11e62d07bdea48fe5a17783ebc0a536fb76b772651b35ee8ec3",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "orkut",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.257195,
+    "max_maintenance_s": 3.8884,
+    "archived_log_sha256": "74ff07f630272852ba36b69539dc3a4614122506632d2b46917f2f58493adf19",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "wiki",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.20864,
+    "max_maintenance_s": 0.39930000000000004,
+    "archived_log_sha256": "8d3c1157a3e4a486db5a2047ab05449de38a795f7820b7fe128351efbfdaa489",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "so",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.146135,
+    "max_maintenance_s": 0.2251,
+    "archived_log_sha256": "7cd16a89ebc12d2f2de209ea95851474610cfacf3e5cc5a84c61ddbabeab74bb",
+    "new_timing_run": false
+  },
+  {
+    "dataset": "frwiki",
+    "historical_build": "v7",
+    "observed_batches": 20,
+    "mean_maintenance_s": 0.62424,
+    "max_maintenance_s": 4.7778,
+    "archived_log_sha256": "bf21bf0148713660e466b784d823cb224b3067f13b446d6d54fd1d6513ae1117",
+    "new_timing_run": false
+  }
+]

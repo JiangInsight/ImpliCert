@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "updates": 3,
+  "planned_updates": 3,
+  "prefix_replay": false,
+  "queries": 3,
+  "copies": 1352601,
+  "physical_updates": 4057803,
+  "flips": 1352594,
+  "validation_enabled": false,
+  "allocation_dump_enabled": false,
+  "sidecar_storage": "streaming gzip level1",
+  "processed_groups": 2028902,
+  "relabels": 676308,
+  "initialization_seconds": 1.7e-06,
+  "update_seconds": 0.3072349,
+  "query_seconds": 9.5e-06,
+  "service_seconds": 0.3072444
+}

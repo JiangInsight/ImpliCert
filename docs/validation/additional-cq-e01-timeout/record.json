@@ -1,0 +1,35 @@
+{
+  "identity": {
+    "baseline": "cq",
+    "input_sha256": {
+      "hypergraph.updates": "29b2c9c3261da773295a57559557028db6af9e5fc81f7da2820acc8cbf3dfeb9",
+      "hypergraph.queries.tsv": "ce9252b993804821123632f360f8889b3890d9fc869fbc70ce3e2810a53c4189"
+    },
+    "binary_sha256": "57210d7b0f1cc2d605ecc1506fb3e057969ac1672dbd6182ae57e5f010a4ab23",
+    "epsilon": ".1",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\cq.exe",
+      "<artifact>\\runs\\validation\\numerical-v2\\004_dblp_k4_replay_hybrid_s1_r1\\hypergraph.updates",
+      "<artifact>\\runs\\validation\\numerical-v2\\004_dblp_k4_replay_hybrid_s1_r1\\hypergraph.queries.tsv",
+      "<artifact>\\runs\\validation\\dynamic\\cq\\result",
+      "0.1",
+      "4",
+      "0",
+      "0"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "timeout",
+  "started_utc": "2026-11-17T20:45:04Z",
+  "exit_code": 1,
+  "wall_s": 60.583066200022586,
+  "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fresh_directory": false
+}

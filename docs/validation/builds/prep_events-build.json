@@ -1,0 +1,26 @@
+{
+  "compiler": "MSVC x64",
+  "command": [
+    "cl",
+    "/nologo",
+    "/O2",
+    "/std:c++20",
+    "/openmp:llvm",
+    "/EHsc",
+    "/I<artifact>\\src",
+    "<artifact>\\tools\\prep_events.cpp",
+    "/Fe:prep_events.exe",
+    "/link",
+    "Psapi.lib",
+    "/STACK:268435456"
+  ],
+  "sources": {
+    "src\\absorber_claim.hpp": "c7d95c208d5abd5dc8f3c8ea09c8948ddd108db35eef0f67a72b8ce81d131744",
+    "src\\barrier.hpp": "b22a6470ef6947a63da27eb4ab24f56733c89c40ce70f3b04e777bdf2c9fc818",
+    "src\\cliques.hpp": "fd639bea455fad54067622a4c720723571fb815a8854f8ad071a432ba550ba90",
+    "src\\export_snapshot.hpp": "0be73872be125593640c1affb4210c97b18f469fd6dd3acbee067da2af8a0782",
+    "src\\graph.hpp": "7aa1ed64e3803440946ae385a7f2da32ca7bd5f930d91c22477c3119eb22b590",
+    "tools\\prep_events.cpp": "f4d86164283a700ec5f536da4039576d2bd5b1a4ca4986eabc61e82b28850ae6"
+  },
+  "binary_sha256": "35e214a1fad376ba92c07be0a6a86373710c163dd53b049399fe0463c18dffa5"
+}

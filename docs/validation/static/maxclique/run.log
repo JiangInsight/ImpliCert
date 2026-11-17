@@ -1,0 +1,2 @@
+graph=<artifact>\runs\release-validation\main\004_dblp_k4_replay_hybrid_s1_r1\snapshot_b4.txt n=24 m=83 degeneracy=5 omega=6 exact=1 load=0.00s search=0.00s nodes=14
+memcap: limit_mb=32768 peak_mb=1 exit=0

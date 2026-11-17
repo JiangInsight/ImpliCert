@@ -1,0 +1,24 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+{"status": "ok", "cliques": 60, "witness_cliques": 55, "lower": "55/8", "upper": "3887360510671167/562949953421312", "raw": "7774721021342317/1125899906842624", "upward_inflation": 1.509903313490213e-14, "relative_inflation": 2.1865736343893823e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=0 total_s=0.473491600 engine_s=0.000112200 export_s=0.001043800 verify_s=0.467277100 rounds=0 dels=0 ins=0
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+cold_batch graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=7 prep=0.00s iter=0.00s LB=5.1250 |S|=8
+{"status": "ok", "cliques": 49, "witness_cliques": 41, "lower": "41/8", "upper": "5826446543517687/1125899906842624", "raw": "5826446543517675/1125899906842624", "upward_inflation": 1.0658141036401503e-14, "relative_inflation": 2.0595743752855385e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=1 total_s=0.580176400 engine_s=0.000124100 export_s=0.000558900 verify_s=0.578266100 rounds=0 dels=1 ins=1
+  global it=10 UB=4.0558 LB=4.0000 gap=1.01396 t=0.0s
+cold_batch graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=14 prep=0.00s iter=0.00s LB=4.0000 |S|=8
+{"status": "ok", "cliques": 40, "witness_cliques": 32, "lower": "4", "upper": "568357863713627/140737488355328", "raw": "284178931856813/70368744177664", "upward_inflation": 7.105427357601002e-15, "relative_inflation": 1.7594548502699387e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=2 total_s=0.486439200 engine_s=0.000163400 export_s=0.000668000 verify_s=0.485575700 rounds=0 dels=1 ins=1
+  global it=10 UB=4.0558 LB=4.0000 gap=1.01396 t=0.0s
+cold_batch graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=14 prep=0.00s iter=0.00s LB=4.0000 |S|=8
+{"status": "ok", "cliques": 40, "witness_cliques": 32, "lower": "4", "upper": "4546862909709015/1125899906842624", "raw": "284178931856813/70368744177664", "upward_inflation": 6.217248937900877e-15, "relative_inflation": 1.5395229939861963e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=3 total_s=0.461041600 engine_s=0.000134900 export_s=0.000481600 verify_s=0.460399600 rounds=0 dels=1 ins=1
+  global it=10 UB=4.0565 LB=4.0000 gap=1.01412 t=0.0s
+cold_batch graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=14 prep=0.00s iter=0.00s LB=4.0000 |S|=8
+{"status": "ok", "cliques": 41, "witness_cliques": 32, "lower": "4", "upper": "4546857167105121/1125899906842624", "raw": "2273428583552557/562949953421312", "upward_inflation": 6.217248937900877e-15, "relative_inflation": 1.539524938377765e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=4 total_s=0.510088300 engine_s=0.000176100 export_s=0.002049000 verify_s=0.507832900 rounds=0 dels=1 ins=1
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=7.1MB
+memcap: limit_mb=32768 peak_mb=30 exit=0

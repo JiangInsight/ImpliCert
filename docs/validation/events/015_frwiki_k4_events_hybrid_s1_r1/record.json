@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "main",
+    "job": {
+      "dataset": "frwiki",
+      "version": "guarded",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "events",
+      "hold": "0",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "015_frwiki_k4_events_hybrid_s1_r1"
+    },
+    "graph_sha256": "b1b0690d573a61081e9e360feafb475fa763a6691262ba51f7fe8ea5e0e359f6",
+    "executable_sha256": "52e6ab1cf90e526343606a9322cadd455a68052b0fe5216f7673c046440ce24b",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\guarded.exe",
+      "<artifact>\\runs\\release-validation\\input\\fixture.ebin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "events",
+      "1",
+      "1",
+      "0",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:35Z",
+  "exit_code": 0,
+  "wall_s": 0.024158700020052493,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "0fe5415a2804486d9ee8bd1dfe425362e71f215f8a1866f80841cacbc7a4fb26",
+  "log_sha256": "e1c705d6ac025f6f9a201bd6fdbc8e8fe24cad59e1528b5dfa64954f12f568f3"
+}

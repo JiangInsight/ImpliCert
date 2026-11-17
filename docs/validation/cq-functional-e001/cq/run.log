@@ -1,0 +1,2 @@
+complete updates=3 queries=3 service_seconds=0.307244
+memcap: limit_mb=32768 peak_mb=1 exit=0

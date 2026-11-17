@@ -1,0 +1,36 @@
+{
+  "identity": {
+    "baseline": "kclist",
+    "input_sha256": {
+      "snapshot_b4.txt": "6230fe911c193a86be526481c535eea5331e3844901b174d4934d71ff65213a2"
+    },
+    "binary_sha256": "792c76b827c81e77a9acbf6d457523edc835914637a57eb2d61fdb875e3c774d",
+    "epsilon": "0.01",
+    "k": 4,
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\kclist.exe",
+      "1",
+      "1000000",
+      "4",
+      "edges.el",
+      "solution",
+      "1.01",
+      "3",
+      "3600"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 60.0
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:41Z",
+  "exit_code": 0,
+  "wall_s": 0.07115840003825724,
+  "quality_target_reached": true,
+  "timing_definition": "cumulative iteration time plus the final report; input construction excluded",
+  "original_log_sha256": "f375996410437ce3eab90a2b7c82899c0349b67e8020681f8caa9da1212e8ec9",
+  "log_sha256": "b9dcd83e9c80db8632728aecf2f3afe33e74614a2180e84c1653ac3bd41799ef"
+}

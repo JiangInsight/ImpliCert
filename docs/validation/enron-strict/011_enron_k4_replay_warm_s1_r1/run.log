@@ -1,0 +1,25 @@
+  global it=10 UB=1404.0354 LB=1286.4585 gap=1.09140 t=0.7s
+  global it=20 UB=1331.9001 LB=1288.2432 gap=1.03389 t=1.3s
+  global it=30 UB=1310.3711 LB=1288.8389 gap=1.01671 t=2.1s
+  global it=40 UB=1300.9476 LB=1288.8389 gap=1.00940 t=2.8s
+  global it=50 UB=1296.4571 LB=1288.9865 gap=1.00580 t=3.5s
+mode=replay compact=0
+init graph=<artifact>\datasets\email-Enron.bin n=36692 m=165448 k=4 eps=0.010 threads=1 iters=54 prep=0.00s iter=3.74s LB=1288.9865 |S|=297
+{"status": "ok", "cliques": 1272556, "witness_cliques": 382829, "lower": "382829/297", "upper": "356066498804275/274877906944", "raw": "5697063980866473/4398046511104", "upward_inflation": 4.381490725791082e-10, "relative_inflation": 3.382444021116506e-13, "rigorous": true, "epsilon": "1/100"}
+accepted batch=0 total_s=4.365000400 engine_s=3.740947200 export_s=0.009252700 verify_s=0.553944800 rounds=0 dels=0 ins=0
+init_total time=3.74s repair_budget=3.74s
+init_drift maxout=39 lam_range=305.064
+  warm_fallback iters=1 prep=0.00s iter=0.07s time=0.08s UB=1295.3624 LB=1286.3660 closed=1
+{"status": "ok", "cliques": 1272020, "witness_cliques": 393628, "lower": "196814/153", "upper": "356066498804275/274877906944", "raw": "712132997608309/549755813888", "upward_inflation": 4.383764462545514e-10, "relative_inflation": 3.3841993112156844e-13, "rigorous": true, "epsilon": "1/100"}
+accepted batch=1 total_s=0.775404200 engine_s=0.080171600 export_s=0.008661700 verify_s=0.686427500 rounds=0 dels=50 ins=50
+  warm_fallback iters=5 prep=0.00s iter=0.33s time=0.34s UB=1299.1326 LB=1287.2852 closed=1
+{"status": "ok", "cliques": 1271902, "witness_cliques": 383611, "lower": "383611/298", "upper": "1428411428155487/1099511627776", "raw": "5713645712619185/4398046511104", "upward_inflation": 6.282334652496502e-10, "relative_inflation": 4.835791610070651e-13, "rigorous": true, "epsilon": "1/100"}
+accepted batch=2 total_s=0.891567200 engine_s=0.336016100 export_s=0.010361400 verify_s=0.545090700 rounds=0 dels=50 ins=50
+  global it=10 UB=1335.2771 LB=1284.9465 gap=1.03917 t=0.7s
+  global it=20 UB=1303.8885 LB=1285.2341 gap=1.01451 t=1.5s
+  warm_fallback iters=24 prep=0.00s iter=1.78s time=1.79s UB=1297.2673 LB=1285.4257 closed=1
+{"status": "ok", "cliques": 1271052, "witness_cliques": 380486, "lower": "190243/148", "upper": "2852720888626105/2199023255552", "raw": "89147527769489/68719476736", "upward_inflation": 1.1173142411280423e-09, "relative_inflation": 8.612829982064696e-13, "rigorous": true, "epsilon": "1/100"}
+accepted batch=3 total_s=2.353203200 engine_s=1.786779000 export_s=0.009091600 verify_s=0.557213900 rounds=0 dels=50 ins=50
+reranks total=0
+memory state_graph=3.8MB state_vectors=2.8MB state_thread_scratch=1.6MB process_peak=38.2MB
+memcap: limit_mb=32768 peak_mb=34 exit=0

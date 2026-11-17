@@ -1,0 +1,4 @@
+graph,seed,log_initialization
+wiki,1,"stream events=6100538 window=[3900538,5900538) distinct_pairs=942175"
+so,1,"stream events=47903266 window=[37703266,47703266) distinct_pairs=6023689"
+frwiki,1,events total=58835198 initial=58635198 edges=22469272 links=24356217

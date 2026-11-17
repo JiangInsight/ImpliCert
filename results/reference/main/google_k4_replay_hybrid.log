@@ -1,0 +1,38 @@
+  global it=10 UB=2459.3018 LB=2410.9672 gap=1.02005 t=1.0s
+  global it=20 UB=2434.0377 LB=2422.2154 gap=1.00488 t=1.9s
+mode=replay compact=0
+init graph=../data/bin/web-Google.bin n=875713 m=3889846 k=4 eps=0.010 threads=24 iters=20 prep=0.28s iter=1.91s LB=2422.2154 |S|=65
+init_total time=2.23s repair_budget=2.23s
+init_drift maxout=38 lam_range=175.250
+batch=1 dels=500 ins=500 upd=0.0042s cliques_upd=29674 repair=0.0000s rounds=0 cliques_rep=0 UB=2434.0377 LB=2422.2154 gap=1.00488 |S|=65
+batch=2 dels=500 ins=500 upd=0.0026s cliques_upd=29214 repair=0.0000s rounds=0 cliques_rep=0 UB=2434.0377 LB=2422.2154 gap=1.00488 |S|=65
+  repair breakdown: refresh=0.000s (1 calls) relax=0.016s (hessian=0.003s solve=0.001s) newton_rounds=2 absorbed=512 split=36
+batch=3 dels=500 ins=500 upd=0.0030s cliques_upd=37842 repair=0.0165s rounds=7 cliques_rep=1689437 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=4 dels=500 ins=500 upd=0.0046s cliques_upd=29736 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=5 dels=500 ins=500 upd=0.0036s cliques_upd=31224 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=6 dels=500 ins=500 upd=0.0032s cliques_upd=28303 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=7 dels=500 ins=500 upd=0.0034s cliques_upd=31634 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=8 dels=500 ins=500 upd=0.0039s cliques_upd=32700 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+batch=9 dels=500 ins=500 upd=0.0034s cliques_upd=29391 repair=0.0000s rounds=0 cliques_rep=0 UB=2449.0147 LB=2437.6154 gap=1.00468 |S|=65
+  repair breakdown: refresh=0.001s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+batch=10 dels=500 ins=500 upd=0.0036s cliques_upd=29755 repair=0.0027s rounds=8 cliques_rep=41170 UB=2446.1804 LB=2437.6154 gap=1.00351 |S|=65
+  global it=10 UB=2475.0483 LB=2427.3770 gap=1.01964 t=0.9s
+dumped ../data/snap_dumps/google_k4_replay_hybrid_b10.txt
+check batch=10 load_relerr=3.25e-14 cS=158445 exact=158445 | warm_global iters=5 prep=0.17s iter=0.49s LB=2437.6154 | cold_global iters=17 iter=1.54s LB=2431.3810 | ours avg/batch=0.0055s repairs=2/10 | exact_ub=2446.180438 size=65 cold_prep=0.19s maxout=38 lam_range=175.342 cliques=21243816
+batch=11 dels=500 ins=500 upd=0.0038s cliques_upd=32516 repair=0.0000s rounds=0 cliques_rep=0 UB=2446.1804 LB=2437.6154 gap=1.00351 |S|=65
+batch=12 dels=500 ins=500 upd=0.0041s cliques_upd=35099 repair=0.0000s rounds=0 cliques_rep=0 UB=2446.1804 LB=2437.6154 gap=1.00351 |S|=65
+  repair breakdown: refresh=0.000s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=4
+batch=13 dels=500 ins=500 upd=0.0031s cliques_upd=30751 repair=0.0019s rounds=3 cliques_rep=101757 UB=2463.2980 LB=2451.0923 gap=1.00498 |S|=65
+batch=14 dels=500 ins=500 upd=0.0030s cliques_upd=28393 repair=0.0000s rounds=0 cliques_rep=0 UB=2463.2980 LB=2451.0923 gap=1.00498 |S|=65
+batch=15 dels=500 ins=500 upd=0.0040s cliques_upd=35001 repair=0.0000s rounds=0 cliques_rep=0 UB=2463.2980 LB=2451.0923 gap=1.00498 |S|=65
+batch=16 dels=500 ins=500 upd=0.0033s cliques_upd=32498 repair=0.0000s rounds=0 cliques_rep=0 UB=2465.4875 LB=2451.0923 gap=1.00587 |S|=65
+batch=17 dels=500 ins=500 upd=0.0060s cliques_upd=41997 repair=0.0000s rounds=0 cliques_rep=0 UB=2465.4875 LB=2451.0923 gap=1.00587 |S|=65
+batch=18 dels=500 ins=500 upd=0.0035s cliques_upd=30207 repair=0.0000s rounds=0 cliques_rep=0 UB=2465.4875 LB=2451.0923 gap=1.00587 |S|=65
+batch=19 dels=500 ins=500 upd=0.0034s cliques_upd=29782 repair=0.0000s rounds=0 cliques_rep=0 UB=2465.4875 LB=2451.0923 gap=1.00587 |S|=65
+  repair breakdown: refresh=0.000s (1 calls) relax=0.005s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=3
+batch=20 dels=500 ins=500 upd=0.0036s cliques_upd=34762 repair=0.0050s rounds=7 cliques_rep=145706 UB=2463.1124 LB=2451.0923 gap=1.00490 |S|=65
+  global it=10 UB=2490.1906 LB=2441.3115 gap=1.02002 t=0.9s
+dumped ../data/snap_dumps/google_k4_replay_hybrid_b20.txt
+check batch=20 load_relerr=3.27e-14 cS=159321 exact=159321 | warm_global iters=4 prep=0.18s iter=0.38s LB=2457.5303 | cold_global iters=16 iter=1.45s LB=2445.2857 | ours avg/batch=0.0050s repairs=4/20 | exact_ub=2463.112361 size=65 cold_prep=0.17s maxout=39 lam_range=175.342 cliques=21238256
+reranks total=0
+memory state_graph=91.0MB state_vectors=60.3MB state_thread_scratch=383.5MB process_peak=1407.2MB

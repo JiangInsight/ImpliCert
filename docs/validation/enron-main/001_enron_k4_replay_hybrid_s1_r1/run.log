@@ -1,0 +1,35 @@
+  global it=10 UB=1404.0354 LB=1286.4585 gap=1.09140 t=0.7s
+  global it=20 UB=1331.9001 LB=1288.2432 gap=1.03389 t=1.3s
+  global it=30 UB=1310.3711 LB=1288.8389 gap=1.01671 t=2.3s
+  global it=40 UB=1300.9476 LB=1288.8389 gap=1.00940 t=3.0s
+  global it=50 UB=1296.4571 LB=1288.9865 gap=1.00580 t=3.6s
+  global it=10 UB=1402.9179 LB=1285.5914 gap=1.09126 t=0.7s
+  global it=20 UB=1330.7127 LB=1287.3615 gap=1.03367 t=1.3s
+  global it=30 UB=1309.2035 LB=1287.9631 gap=1.01649 t=2.0s
+mode=replay compact=0
+init graph=<artifact>\datasets\email-Enron.bin n=36692 m=165448 k=4 eps=0.010 threads=1 iters=54 prep=0.00s iter=3.91s LB=1288.9865 |S|=297
+init_total time=3.91s repair_budget=3.91s
+init_drift maxout=39 lam_range=305.064
+baseline_status batch=1 warm=certified cold=certified
+check batch=1 load_relerr=5.58e-14 cS=382568 exact=382568 | warm_global iters=1 prep=0.00s iter=0.07s LB=1286.3660 | cold_global iters=39 iter=2.59s LB=1287.9631 | ours avg/batch=0.0004s repairs=0/1 | exact_ub=1295.362377 size=297 cold_prep=0.00s maxout=39 lam_range=305.064 cliques=1272020
+batch=1 dels=50 ins=50 upd=0.0004s cliques_upd=2546 repair=0.0000s rounds=0 cliques_rep=0 UB=1295.3624 LB=1288.1077 gap=1.00563 |S|=297
+  global it=10 UB=1400.4159 LB=1285.3510 gap=1.08952 t=1.2s
+  global it=20 UB=1328.8173 LB=1286.6723 gap=1.03276 t=2.2s
+  global it=30 UB=1308.1901 LB=1287.2852 gap=1.01624 t=2.9s
+  repair breakdown: refresh=0.005s (1 calls) relax=0.145s (hessian=0.040s solve=0.005s) newton_rounds=1 absorbed=256 split=0
+baseline_status batch=2 warm=certified cold=certified
+check batch=2 load_relerr=6.80e-14 cS=382366 exact=382366 | warm_global iters=8 prep=0.00s iter=0.65s LB=1287.4276 | cold_global iters=39 iter=3.50s LB=1287.4276 | ours avg/batch=0.0766s repairs=1/2 | exact_ub=1290.723340 size=297 cold_prep=0.00s maxout=39 lam_range=304.919 cliques=1271902
+batch=2 dels=50 ins=50 upd=0.0018s cliques_upd=3736 repair=0.1509s rounds=6 cliques_rep=4709566 UB=1290.7233 LB=1287.4276 gap=1.00256 |S|=297
+  global it=10 UB=1321.3983 LB=1285.0805 gap=1.02826 t=0.7s
+  global it=20 UB=1298.4163 LB=1285.4257 gap=1.01011 t=1.5s
+  global it=10 UB=1400.8206 LB=1283.2079 gap=1.09166 t=0.7s
+  global it=20 UB=1328.5918 LB=1284.4868 gap=1.03434 t=1.4s
+  global it=30 UB=1307.3639 LB=1285.4582 gap=1.01704 t=2.1s
+  global it=40 UB=1297.9159 LB=1285.4582 gap=1.00969 t=2.7s
+  repair breakdown: refresh=0.006s (1 calls) relax=0.224s (hessian=0.081s solve=0.010s) newton_rounds=2 absorbed=512 split=0
+baseline_status batch=3 warm=certified cold=certified
+check batch=3 load_relerr=6.13e-14 cS=384285 exact=384285 | warm_global iters=29 prep=0.00s iter=2.11s LB=1285.5940 | cold_global iters=40 iter=2.75s LB=1285.4582 | ours avg/batch=0.1278s repairs=2/3 | exact_ub=1288.883367 size=299 cold_prep=0.00s maxout=39 lam_range=304.779 cliques=1271052
+batch=3 dels=50 ins=50 upd=0.0005s cliques_upd=4808 repair=0.2298s rounds=5 cliques_rep=6579396 UB=1288.8834 LB=1285.2341 gap=1.00284 |S|=299
+reranks total=0
+memory state_graph=3.8MB state_vectors=2.9MB state_thread_scratch=1.6MB process_peak=42.0MB
+memcap: limit_mb=32768 peak_mb=38 exit=0

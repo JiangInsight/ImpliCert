@@ -1,0 +1,9 @@
+passed threads=2 claim_epochs=512 slots_per_epoch=64 Hessian_epochs=64 roots=64 outsiders=4
+passed threads=8 claim_epochs=512 slots_per_epoch=64 Hessian_epochs=64 roots=64 outsiders=4
+passed threads=24 claim_epochs=512 slots_per_epoch=64 Hessian_epochs=64 roots=64 outsiders=4
+passed split_edge_root_neighbors=10001 k=2
+passed complete_graph=16 k=16 witness_cliques=1
+passed complete_graph=17 k=17 witness_cliques=1
+passed complete_graph=18 k=17 witness_cliques=18
+passed complete_graph=18 k=18 witness_cliques=1
+passed complete_graph=257 k=257 witness_cliques=1

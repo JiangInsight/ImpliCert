@@ -1,0 +1,23 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+{"status": "ok", "cliques": 60, "witness_cliques": 55, "lower": "55/8", "upper": "3887360510671167/562949953421312", "raw": "7774721021342317/1125899906842624", "upward_inflation": 1.509903313490213e-14, "relative_inflation": 2.1865736343893823e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=0 total_s=0.667197500 engine_s=0.000163800 export_s=0.000627900 verify_s=0.659847300 rounds=0 dels=0 ins=0
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+  repair breakdown: refresh=0.000s (1 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+{"status": "ok", "cliques": 49, "witness_cliques": 41, "lower": "41/8", "upper": "722541429578421/140737488355328", "raw": "5780331436627355/1125899906842624", "upward_inflation": 1.1546319456101628e-14, "relative_inflation": 2.2490059856472692e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=1 total_s=0.638637100 engine_s=0.000087500 export_s=0.000600200 verify_s=0.636731400 rounds=2 dels=1 ins=1
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=17 repair=0.0001s rounds=2 cliques_rep=98 UB=5.1340 LB=5.1250 gap=1.00175 |S|=8
+  repair breakdown: refresh=0.000s (2 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=7 absorbed=41 split=0
+{"status": "ok", "cliques": 40, "witness_cliques": 32, "lower": "4", "upper": "1131394187661523/281474976710656", "raw": "4525576750646083/1125899906842624", "upward_inflation": 7.993605777301127e-15, "relative_inflation": 1.9886967995217708e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=2 total_s=0.450645200 engine_s=0.000172300 export_s=0.000447500 verify_s=0.449999600 rounds=12 dels=1 ins=1
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=9 repair=0.0002s rounds=12 cliques_rep=813 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+{"status": "ok", "cliques": 40, "witness_cliques": 32, "lower": "4", "upper": "1131394187661523/281474976710656", "raw": "4525576750646083/1125899906842624", "upward_inflation": 7.993605777301127e-15, "relative_inflation": 1.9886967995217708e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=3 total_s=0.586176400 engine_s=0.000015100 export_s=0.000492500 verify_s=0.585643300 rounds=0 dels=1 ins=1
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+{"status": "ok", "cliques": 41, "witness_cliques": 32, "lower": "4", "upper": "1131394187661523/281474976710656", "raw": "4525576750646083/1125899906842624", "upward_inflation": 7.993605777301127e-15, "relative_inflation": 1.9886967995217708e-15, "rigorous": true, "epsilon": "1/100"}
+accepted batch=4 total_s=0.587627800 engine_s=0.000015200 export_s=0.000721300 verify_s=0.586866600 rounds=0 dels=1 ins=1
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=1 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0195 LB=4.0000 gap=1.00488 |S|=8
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=7.5MB
+memcap: limit_mb=32768 peak_mb=30 exit=0

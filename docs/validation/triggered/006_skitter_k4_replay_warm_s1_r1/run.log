@@ -1,0 +1,21 @@
+mode=replay compact=0
+init graph=<artifact>\runs\release-validation\input\tiny.bin n=24 m=83 k=4 eps=0.010 threads=1 iters=4 prep=0.00s iter=0.00s LB=6.8750 |S|=8
+init_total time=0.00s repair_budget=0.00s
+init_drift maxout=6 lam_range=9.046
+work batch=1 arm=warm input_hash=314d0fa337a66f4d triggered=1 pre_ub=5.6980203219219305 pre_lb=5.125 post_ub=5.1330556961748321 post_lb=5.125 update_s=0.000013400 repair_s=0.000063500 full_passes=3 full_visits=147 prefix_visits=147 local_visits=0
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+check batch=1 load_relerr=3.463e-16 cS=41 exact=41 exact_ub=5.13305569617483 size=8 cliques=49
+batch=1 dels=1 ins=1 upd=0.0000s cliques_upd=17 repair=0.0001s rounds=3 cliques_rep=0 UB=5.1331 LB=5.1250 gap=1.00157 |S|=8
+work batch=2 arm=warm input_hash=6574fbaf8690c0b8 triggered=1 pre_ub=5.127583040846476 pre_lb=4 post_ub=4.017697866061277 post_lb=4 update_s=0.000004900 repair_s=0.000128200 full_passes=6 full_visits=240 prefix_visits=240 local_visits=0
+  repair breakdown: refresh=0.000s (0 calls) relax=0.000s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=0
+check batch=2 load_relerr=6.653e-16 cS=32 exact=32 exact_ub=4.01769786606128 size=8 cliques=40
+batch=2 dels=1 ins=1 upd=0.0000s cliques_upd=9 repair=0.0001s rounds=6 cliques_rep=0 UB=4.0177 LB=4.0000 gap=1.00442 |S|=8
+work batch=3 arm=warm input_hash=e18767d1a4bedef8 triggered=0 pre_ub=4.017697866061277 pre_lb=4 post_ub=4.017697866061277 post_lb=4 update_s=0.000006900 repair_s=0.000000100 full_passes=0 full_visits=0 prefix_visits=0 local_visits=0
+check batch=3 load_relerr=6.653e-16 cS=32 exact=32 exact_ub=4.01769786606128 size=8 cliques=40
+batch=3 dels=1 ins=1 upd=0.0000s cliques_upd=0 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0177 LB=4.0000 gap=1.00442 |S|=8
+work batch=4 arm=warm input_hash=30522aaeba07d911 triggered=0 pre_ub=4.017697866061277 pre_lb=4 post_ub=4.017697866061277 post_lb=4 update_s=0.000005200 repair_s=0.000000000 full_passes=0 full_visits=0 prefix_visits=0 local_visits=0
+check batch=4 load_relerr=6.653e-16 cS=32 exact=32 exact_ub=4.01769786606128 size=8 cliques=41
+batch=4 dels=1 ins=1 upd=0.0000s cliques_upd=1 repair=0.0000s rounds=0 cliques_rep=0 UB=4.0177 LB=4.0000 gap=1.00442 |S|=8
+reranks total=0
+memory state_graph=0.0MB state_vectors=0.0MB state_thread_scratch=0.9MB process_peak=6.8MB
+memcap: limit_mb=32768 peak_mb=2 exit=0

@@ -1,0 +1,81 @@
+  global it=10 UB=3551.1577 LB=3323.6873 gap=1.06844 t=0.2s
+  global it=20 UB=3393.1004 LB=3325.5257 gap=1.02032 t=0.3s
+  global it=30 UB=3352.9059 LB=3325.5257 gap=1.00823 t=0.5s
+stream events=6100538 window=[3900538,5900538) distinct_pairs=942175
+mode=stream compact=0
+init graph=../data/bin/wiki-talk-temporal.tbin n=1094018 m=942175 k=4 eps=0.010 threads=24 iters=38 prep=0.04s iter=0.63s LB=3325.5257 |S|=272
+init_total time=0.69s repair_budget=0.69s
+init_drift maxout=59 lam_range=304.404
+  repair breakdown: refresh=0.001s (1 calls) relax=0.115s (hessian=0.022s solve=0.003s) newton_rounds=1 absorbed=256 split=43
+batch=1 dels=5566 ins=4545 upd=0.0075s cliques_upd=50671 repair=0.1164s rounds=6 cliques_rep=12603183 UB=3317.2546 LB=3305.0956 gap=1.00368 |S|=272
+  repair breakdown: refresh=0.002s (1 calls) relax=0.077s (hessian=0.034s solve=0.003s) newton_rounds=1 absorbed=256 split=33
+batch=2 dels=4493 ins=4438 upd=0.0056s cliques_upd=45570 repair=0.0789s rounds=3 cliques_rep=8175653 UB=3330.5433 LB=3316.2831 gap=1.00430 |S|=272
+  repair breakdown: refresh=0.002s (1 calls) relax=0.088s (hessian=0.024s solve=0.003s) newton_rounds=1 absorbed=256 split=38
+batch=3 dels=5058 ins=4615 upd=0.0066s cliques_upd=55459 repair=0.0899s rounds=3 cliques_rep=8113419 UB=3341.0445 LB=3324.9118 gap=1.00485 |S|=272
+  repair breakdown: refresh=0.002s (1 calls) relax=0.151s (hessian=0.057s solve=0.006s) newton_rounds=2 absorbed=512 split=55
+batch=4 dels=4631 ins=4829 upd=0.0083s cliques_upd=56799 repair=0.1524s rounds=4 cliques_rep=13797773 UB=3342.4079 LB=3329.2978 gap=1.00394 |S|=272
+  repair breakdown: refresh=0.002s (1 calls) relax=0.137s (hessian=0.052s solve=0.005s) newton_rounds=2 absorbed=512 split=59
+batch=5 dels=4092 ins=4191 upd=0.0084s cliques_upd=46037 repair=0.1392s rounds=5 cliques_rep=14635737 UB=3362.9511 LB=3348.1728 gap=1.00441 |S|=272
+  repair breakdown: refresh=0.003s (2 calls) relax=0.317s (hessian=0.119s solve=0.016s) newton_rounds=6 absorbed=1536 split=112
+batch=6 dels=4324 ins=4383 upd=0.0065s cliques_upd=51035 repair=0.3200s rounds=10 cliques_rep=35853134 UB=3360.0597 LB=3350.9538 gap=1.00272 |S|=260
+  rerank batch=7 out_limit=118
+  repair breakdown: refresh=0.002s (1 calls) relax=0.150s (hessian=0.053s solve=0.008s) newton_rounds=3 absorbed=768 split=95
+batch=7 dels=5390 ins=4898 upd=0.0493s cliques_upd=51112 repair=0.1522s rounds=8 cliques_rep=19056542 UB=3376.4367 LB=3363.3038 gap=1.00390 |S|=260
+  repair breakdown: refresh=0.001s (1 calls) relax=0.159s (hessian=0.061s solve=0.007s) newton_rounds=3 absorbed=768 split=49
+batch=8 dels=4070 ins=4542 upd=0.0062s cliques_upd=57263 repair=0.1604s rounds=6 cliques_rep=19625729 UB=3406.9802 LB=3392.2923 gap=1.00433 |S|=260
+  rerank batch=9 out_limit=120
+  repair breakdown: refresh=0.003s (1 calls) relax=0.143s (hessian=0.049s solve=0.004s) newton_rounds=2 absorbed=512 split=43
+batch=9 dels=4287 ins=4664 upd=0.0605s cliques_upd=57159 repair=0.1456s rounds=5 cliques_rep=14982706 UB=3428.4564 LB=3413.9769 gap=1.00424 |S|=260
+  repair breakdown: refresh=0.002s (1 calls) relax=0.126s (hessian=0.047s solve=0.006s) newton_rounds=2 absorbed=512 split=50
+batch=10 dels=4646 ins=4940 upd=0.0073s cliques_upd=51250 repair=0.1281s rounds=5 cliques_rep=14089182 UB=3435.1132 LB=3418.3269 gap=1.00491 |S|=260
+  global it=10 UB=3501.7017 LB=3425.7810 gap=1.02216 t=0.2s
+  global it=20 UB=3461.7569 LB=3429.2473 gap=1.00948 t=0.3s
+  global it=10 UB=3682.8961 LB=3428.9094 gap=1.07407 t=0.2s
+  global it=20 UB=3498.7300 LB=3429.0803 gap=1.02031 t=0.3s
+check batch=10 load_relerr=5.32e-12 cS=888765 exact=888765 | warm_global iters=29 prep=0.05s iter=0.46s LB=3429.2473 | cold_global iters=29 iter=0.42s LB=3429.4926 | ours avg/batch=0.1649s repairs=10/10 | exact_ub=3435.113246 size=260 cold_prep=0.04s maxout=74 lam_range=305.187 cliques=2300159
+  repair breakdown: refresh=0.001s (1 calls) relax=0.159s (hessian=0.058s solve=0.009s) newton_rounds=3 absorbed=768 split=46
+batch=11 dels=4835 ins=5732 upd=0.0067s cliques_upd=45717 repair=0.1600s rounds=5 cliques_rep=19138889 UB=3441.3936 LB=3425.4769 gap=1.00465 |S|=260
+  repair breakdown: refresh=0.002s (1 calls) relax=0.121s (hessian=0.043s solve=0.006s) newton_rounds=2 absorbed=512 split=42
+batch=12 dels=4815 ins=6842 upd=0.0093s cliques_upd=42289 repair=0.1229s rounds=4 cliques_rep=13840107 UB=3443.8878 LB=3432.8947 gap=1.00320 |S|=266
+  repair breakdown: refresh=0.002s (1 calls) relax=0.241s (hessian=0.093s solve=0.014s) newton_rounds=4 absorbed=1024 split=70
+batch=13 dels=4895 ins=5988 upd=0.0103s cliques_upd=42841 repair=0.2427s rounds=6 cliques_rep=24838769 UB=3444.4650 LB=3431.5827 gap=1.00375 |S|=266
+  repair breakdown: refresh=0.002s (1 calls) relax=0.312s (hessian=0.122s solve=0.018s) newton_rounds=5 absorbed=1280 split=86
+batch=14 dels=4732 ins=3501 upd=0.0112s cliques_upd=44977 repair=0.3148s rounds=7 cliques_rep=30288776 UB=3437.1336 LB=3423.6381 gap=1.00394 |S|=268
+  repair breakdown: refresh=0.002s (1 calls) relax=0.131s (hessian=0.047s solve=0.006s) newton_rounds=2 absorbed=512 split=56
+batch=15 dels=4860 ins=3204 upd=0.0103s cliques_upd=33877 repair=0.1334s rounds=5 cliques_rep=14338078 UB=3442.0010 LB=3425.6171 gap=1.00478 |S|=269
+  repair breakdown: refresh=0.002s (1 calls) relax=0.251s (hessian=0.091s solve=0.013s) newton_rounds=4 absorbed=1024 split=64
+batch=16 dels=4656 ins=5287 upd=0.0120s cliques_upd=44939 repair=0.2525s rounds=7 cliques_rep=26196414 UB=3431.3140 LB=3419.4428 gap=1.00347 |S|=271
+  repair breakdown: refresh=0.002s (1 calls) relax=0.370s (hessian=0.149s solve=0.021s) newton_rounds=6 absorbed=1536 split=87
+batch=17 dels=4713 ins=8248 upd=0.0156s cliques_upd=34862 repair=0.3717s rounds=8 cliques_rep=35847473 UB=3408.6016 LB=3393.4672 gap=1.00446 |S|=274
+  repair breakdown: refresh=0.002s (1 calls) relax=0.233s (hessian=0.090s solve=0.012s) newton_rounds=4 absorbed=1024 split=67
+batch=18 dels=4950 ins=7400 upd=0.0180s cliques_upd=32193 repair=0.2356s rounds=6 cliques_rep=25060042 UB=3401.9480 LB=3387.6861 gap=1.00421 |S|=274
+  repair breakdown: refresh=0.004s (2 calls) relax=0.384s (hessian=0.154s solve=0.022s) newton_rounds=7 absorbed=1792 split=98
+batch=19 dels=5310 ins=6132 upd=0.0114s cliques_upd=54486 repair=0.3879s rounds=10 cliques_rep=40926058 UB=3387.9994 LB=3381.7931 gap=1.00184 |S|=261
+  rerank batch=20 out_limit=116
+  repair breakdown: refresh=0.003s (1 calls) relax=0.123s (hessian=0.046s solve=0.006s) newton_rounds=2 absorbed=512 split=33
+batch=20 dels=4998 ins=4750 upd=0.0711s cliques_upd=55010 repair=0.1261s rounds=5 cliques_rep=14229319 UB=3398.7495 LB=3389.0421 gap=1.00286 |S|=261
+  global it=10 UB=3597.6128 LB=3382.4870 gap=1.06360 t=0.2s
+  global it=20 UB=3533.1118 LB=3385.0775 gap=1.04373 t=0.3s
+  global it=30 UB=3531.5528 LB=3390.2780 gap=1.04167 t=0.4s
+  global it=40 UB=3530.0179 LB=3390.2780 gap=1.04122 t=0.6s
+  global it=50 UB=3527.9845 LB=3390.4475 gap=1.04057 t=0.7s
+  global it=60 UB=3525.1223 LB=3390.4475 gap=1.03972 t=0.8s
+  global it=70 UB=3521.1145 LB=3390.4922 gap=1.03853 t=0.9s
+  global it=80 UB=3515.6482 LB=3390.4922 gap=1.03691 t=1.0s
+  global it=90 UB=3508.4755 LB=3390.4922 gap=1.03480 t=1.1s
+  global it=100 UB=3499.5134 LB=3390.4922 gap=1.03215 t=1.3s
+  global it=110 UB=3488.9356 LB=3390.4922 gap=1.02904 t=1.4s
+  global it=120 UB=3477.1978 LB=3390.4922 gap=1.02557 t=1.5s
+  global it=130 UB=3464.9593 LB=3390.4922 gap=1.02196 t=1.6s
+  global it=140 UB=3452.9299 LB=3390.4922 gap=1.01842 t=1.6s
+  global it=150 UB=3441.7170 LB=3390.4922 gap=1.01511 t=1.7s
+  global it=160 UB=3431.7323 LB=3390.4922 gap=1.01216 t=1.8s
+  global it=170 UB=3423.1740 LB=3390.4922 gap=1.00964 t=1.9s
+  global it=180 UB=3416.0624 LB=3390.4922 gap=1.00754 t=2.0s
+  global it=190 UB=3410.2970 LB=3390.4922 gap=1.00584 t=2.1s
+  global it=10 UB=3646.2279 LB=3387.4569 gap=1.07639 t=0.1s
+  global it=20 UB=3468.6091 LB=3389.4115 gap=1.02337 t=0.2s
+  global it=30 UB=3426.3256 LB=3390.0116 gap=1.01071 t=0.3s
+check batch=20 load_relerr=5.32e-12 cS=884540 exact=884540 | warm_global iters=196 prep=0.03s iter=2.18s LB=3390.4922 | cold_global iters=32 iter=0.35s LB=3390.0116 | ours avg/batch=0.2086s repairs=20/20 | exact_ub=3398.749513 size=261 cold_prep=0.03s maxout=58 lam_range=305.350 cliques=2248020
+reranks total=3
+memory state_graph=67.5MB state_vectors=87.3MB state_thread_scratch=473.4MB process_peak=1237.2MB

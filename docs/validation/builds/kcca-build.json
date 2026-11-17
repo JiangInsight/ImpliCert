@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<cxx>",
+    "-O3",
+    "<artifact>\\external\\kcca\\kcca.cpp",
+    "<artifact>\\external\\kcca\\graph.cpp",
+    "<artifact>\\external\\kcca\\sct.cpp",
+    "<artifact>\\external\\kcca\\pava.cpp",
+    "-o",
+    "<artifact>\\build\\kcca.exe",
+    "-static",
+    "-Wl,--stack,268435456"
+  ],
+  "compiler": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+  "sources": {
+    "<artifact>\\external\\kcca\\kcca.cpp": "15f7faf24439d389cf060ea2032756d8c0402eb49309fc6d73473fe7ace5db55",
+    "<artifact>\\external\\kcca\\graph.cpp": "d8d653703b05a9399415406a36017ebf8071b47fd479b2291f40b4e3389b2f4f",
+    "<artifact>\\external\\kcca\\sct.cpp": "450c65661471b3ccbbc420a25f7a0b1add5603ce6caedcc7369ed1aceeae295b",
+    "<artifact>\\external\\kcca\\pava.cpp": "dd11cd409acc4c6819c12cfe63421f3c2ae962c9f7efa3cc0a8f45d16ea30946"
+  },
+  "binary_sha256": "ee5a7353730a77d87e65f5f224d262a2f0cd7215eecebf4715bbf6b5e8908184"
+}

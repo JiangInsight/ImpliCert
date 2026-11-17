@@ -1,0 +1,30 @@
+{
+  "command": [
+    "<cxx>",
+    "-Ofast",
+    "-mcmodel=medium",
+    "-march=native",
+    "-std=c++14",
+    "-mavx",
+    "-include",
+    "cassert",
+    "<artifact>\\external\\ccas\\ccas.cpp",
+    "<artifact>\\external\\ccas\\graph.cpp",
+    "<artifact>\\external\\ccas\\pava.cpp",
+    "<artifact>\\external\\ccas\\sct.cpp",
+    "<artifact>\\external\\ccas\\heap.cpp",
+    "-o",
+    "<artifact>\\build\\ccas.exe",
+    "-static",
+    "-Wl,--stack,268435456"
+  ],
+  "compiler": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+  "sources": {
+    "<artifact>\\external\\ccas\\ccas.cpp": "ec8468c3a2a59e3eb37b92a192a3ffda7c6c748f4ec8d232b285cf16f47ae823",
+    "<artifact>\\external\\ccas\\graph.cpp": "a0e61426f6d02a4b867ee120245cb7ea78bc609a88a6c79c06efdac865211c48",
+    "<artifact>\\external\\ccas\\pava.cpp": "3c4c21623708ddb0f106280fe8f22005f721c8df8f3418867fcf55fab81edc9a",
+    "<artifact>\\external\\ccas\\sct.cpp": "dd377fbde8185197e76d1453dfccae27829caa7c509c89ed6de3c66805fe9d96",
+    "<artifact>\\external\\ccas\\heap.cpp": "2f064e3de36c1a73122b9e75411bba2d2ea637f91d55f32b1de46417d8ee7b0d"
+  },
+  "binary_sha256": "1ed04992ee026dce2a950e935ae35d04006916a8a170d0fc8c16260adb4f0a9d"
+}

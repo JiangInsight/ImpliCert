@@ -1,0 +1,31 @@
+mode=replay compact=0
+init graph=../data/bin/cit-Patents.bin n=3774768 m=14867053 k=4 eps=0.010 threads=24 iters=8 prep=1.88s iter=0.95s LB=2930.2124 |S|=113
+init_total time=3.01s repair_budget=3.01s
+init_drift maxout=59 lam_range=66.419
+batch=1 dels=500 ins=500 upd=0.0031s cliques_upd=802 repair=0.0000s rounds=0 cliques_rep=0 UB=2941.5777 LB=2930.2124 gap=1.00388 |S|=113
+batch=2 dels=500 ins=500 upd=0.0016s cliques_upd=753 repair=0.0000s rounds=0 cliques_rep=0 UB=2941.5777 LB=2930.2124 gap=1.00388 |S|=113
+batch=3 dels=500 ins=500 upd=0.0015s cliques_upd=631 repair=0.0000s rounds=0 cliques_rep=0 UB=2941.5777 LB=2930.2124 gap=1.00388 |S|=113
+batch=4 dels=500 ins=500 upd=0.0015s cliques_upd=661 repair=0.0000s rounds=0 cliques_rep=0 UB=2941.5777 LB=2930.2124 gap=1.00388 |S|=113
+batch=5 dels=500 ins=500 upd=0.0015s cliques_upd=679 repair=0.0000s rounds=0 cliques_rep=0 UB=2941.5777 LB=2930.2124 gap=1.00388 |S|=113
+  repair breakdown: refresh=0.001s (1 calls) relax=0.002s (hessian=0.000s solve=0.000s) newton_rounds=0 absorbed=0 split=2
+batch=6 dels=500 ins=500 upd=0.0017s cliques_upd=1284 repair=0.0031s rounds=3 cliques_rep=170006 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+batch=7 dels=500 ins=500 upd=0.0014s cliques_upd=856 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+batch=8 dels=500 ins=500 upd=0.0015s cliques_upd=646 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+batch=9 dels=500 ins=500 upd=0.0014s cliques_upd=872 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+batch=10 dels=500 ins=500 upd=0.0014s cliques_upd=402 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+dumped ../data/snap_dumps/patents_k4_replay_hybrid_b10.txt
+check batch=10 load_relerr=1.78e-15 cS=331716 exact=331716 | warm_global iters=1 prep=1.87s iter=0.18s LB=2935.5398 | cold_global iters=6 iter=0.70s LB=2935.5398 | ours avg/batch=0.0020s repairs=1/10 | exact_ub=2947.465191 size=113 cold_prep=1.90s maxout=59 lam_range=66.419 cliques=1872730
+batch=11 dels=500 ins=500 upd=0.0036s cliques_upd=694 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2935.5398 gap=1.00406 |S|=113
+batch=12 dels=500 ins=500 upd=0.0019s cliques_upd=961 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=13 dels=500 ins=500 upd=0.0016s cliques_upd=574 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=14 dels=500 ins=500 upd=0.0015s cliques_upd=829 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=15 dels=500 ins=500 upd=0.0014s cliques_upd=603 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=16 dels=500 ins=500 upd=0.0014s cliques_upd=514 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=17 dels=500 ins=500 upd=0.0014s cliques_upd=499 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=18 dels=500 ins=500 upd=0.0013s cliques_upd=531 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=19 dels=500 ins=500 upd=0.0014s cliques_upd=544 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+batch=20 dels=500 ins=500 upd=0.0013s cliques_upd=471 repair=0.0000s rounds=0 cliques_rep=0 UB=2947.4652 LB=2931.8053 gap=1.00534 |S|=113
+dumped ../data/snap_dumps/patents_k4_replay_hybrid_b20.txt
+check batch=20 load_relerr=1.78e-15 cS=331294 exact=331294 | warm_global iters=1 prep=1.88s iter=0.18s LB=2931.8053 | cold_global iters=6 iter=0.62s LB=2931.8053 | ours avg/batch=0.0018s repairs=1/20 | exact_ub=2947.465191 size=113 cold_prep=1.76s maxout=59 lam_range=66.419 cliques=1872412
+reranks total=0
+memory state_graph=363.4MB state_vectors=254.8MB state_thread_scratch=1577.9MB process_peak=5646.7MB

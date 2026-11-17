@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "main",
+    "job": {
+      "dataset": "dblp",
+      "version": "v7b",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "replay",
+      "hold": ".15",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "004_dblp_k4_replay_hybrid_s1_r1"
+    },
+    "graph_sha256": "3b3a486811c1eb58f6848687a97eef22fef95cb195c8e1e5e8c6938dc07058ba",
+    "executable_sha256": "f55efa675b2a5ce19ec2a8475b772f492bee8fb97ebb1c636756d8924bf7f40e",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\v7b.exe",
+      "<artifact>\\runs\\release-validation\\input\\tiny.bin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "replay",
+      "1",
+      "1",
+      ".15",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:27Z",
+  "exit_code": 0,
+  "wall_s": 0.06020909996004775,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "04f5a8cb0ff75545bfef82fbca91e33b452aef1dfa2788938734a2585087d9a7",
+  "log_sha256": "fc67d28f5df700f3b38daeb8f4edb859190ee5eadf9765f57705f8107f7931d4"
+}

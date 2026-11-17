@@ -1,0 +1,22 @@
+{
+  "fresh_directory": true,
+  "release_file_hash_manifest": "release-files.json",
+  "python": "3.13.12",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "builds": 26,
+  "completed_records": 55,
+  "status_counts": {
+    "ok": 55
+  },
+  "independently_accepted_checkpoints": 27,
+  "numerical_batches": 145,
+  "full_enron_csr_sha256": "9202d8082de4fdefba3954eee4ae0d9233c3b3636575c5bd977ad570ff64cf81",
+  "historical_logs_hash_verified": 15,
+  "scope": "correctness and pipeline validation; not full published timing reproduction",
+  "path_normalization": "<artifact>, <python>, <cxx>; original log hashes retained in each record",
+  "cq_functional_epsilons": [
+    0.01,
+    0.1,
+    0.5
+  ]
+}

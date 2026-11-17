@@ -1,0 +1,147 @@
+Computing for k = 4  Max_iter is: 0
+Reading graph from file <artifact>\runs\release-validation\main\004_dblp_k4_replay_hybrid_s1_r1\snapshot_b4.txt
+Graph size |V| = 24, |E| = 83
+Building graph structure
+Building finished
+Graph size after decompostion |V| = 24, |E| = 83
+24 83
+15 50
+12 39
+11 36
+core value: 5
+11 36
+3-clique  77 milliseconds.
+44
+Indexing time  75 milliseconds.
+r_max =  5
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.8000000000
+Total running time after iteration: 1  152 milliseconds.
+4 5
+r_max =  4.92857
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.8115942029
+Total running time after iteration: 2  152 milliseconds.
+4 4.92857
+r_max =  4.52381
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.8842105263
+Total running time after iteration: 3  154 milliseconds.
+4 4.52381
+r_max =  4.35714
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9180327869
+Total running time after iteration: 4  154 milliseconds.
+4 4.35714
+r_max =  4.2
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9523809524
+Total running time after iteration: 5  154 milliseconds.
+4 4.2
+r_max =  4.21429
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9491525424
+Total running time after iteration: 6  154 milliseconds.
+4 4.21429
+r_max =  4.20408
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9514563107
+Total running time after iteration: 7  154 milliseconds.
+4 4.20408
+r_max =  4.16071
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9613733906
+Total running time after iteration: 8  154 milliseconds.
+4 4.16071
+r_max =  4.14286
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9655172414
+Total running time after iteration: 9  154 milliseconds.
+4 4.14286
+r_max =  4.12857
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9688581315
+Total running time after iteration: 10  154 milliseconds.
+4 4.12857
+r_max =  4.12987
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9685534591
+Total running time after iteration: 11  154 milliseconds.
+4 4.12987
+r_max =  4.07143
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9824561404
+Total running time after iteration: 12  154 milliseconds.
+4 4.07143
+r_max =  4.0989
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9758713137
+Total running time after iteration: 13  154 milliseconds.
+4 4.0989
+r_max =  4.10204
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9751243781
+Total running time after iteration: 14  154 milliseconds.
+4 4.10204
+r_max =  4.08571
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9790209790
+Total running time after iteration: 15  154 milliseconds.
+4 4.08571
+r_max =  4.08036
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9803063457
+Total running time after iteration: 16  154 milliseconds.
+4 4.08036
+r_max =  4.06723
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9834710744
+Total running time after iteration: 17  154 milliseconds.
+4 4.06723
+r_max =  4.07937
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9805447471
+Total running time after iteration: 18  154 milliseconds.
+4 4.07937
+r_max =  4.05263
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9870129870
+Total running time after iteration: 19  154 milliseconds.
+4 4.05263
+r_max =  4.05714
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9859154930
+Total running time after iteration: 20  154 milliseconds.
+4 4.05714
+r_max =  4.06803
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9832775920
+Total running time after iteration: 21  154 milliseconds.
+4 4.06803
+r_max =  4.05844
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9856000000
+Total running time after iteration: 22  154 milliseconds.
+4 4.05844
+r_max =  4.04348
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9892473118
+Total running time after iteration: 23  154 milliseconds.
+4 4.04348
+r_max =  4.04762
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9882352941
+Total running time after iteration: 24  154 milliseconds.
+4 4.04762
+r_max =  4.05143
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9873060649
+Total running time after iteration: 25  154 milliseconds.
+4 4.05143
+r_max =  4.03297
+Maximum density is 4.0000000000
+Approxiamtion rate is 0.9918256131
+Total running time after iteration: 26  154 milliseconds.
+4 4.03297
+Total running time  154 milliseconds.
+memcap: limit_mb=32768 peak_mb=383 exit=0

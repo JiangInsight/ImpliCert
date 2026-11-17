@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "binary_sha256": "9d25e9debdbe5d099c60b05147faffa4a8dafce27a18e471f7f27af962f9b1b2",
+    "command": [
+      "<artifact>\\build\\test_contract.exe"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 120
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:13Z",
+  "exit_code": 0,
+  "wall_s": 0.17549499997403473,
+  "original_log_sha256": "9816a44e52d9d6d24bc2312bef5c69e157735a7f15f6abd6b9bb17d958c9374f",
+  "log_sha256": "17554e997287e6b1147522f53e55e845490aa349b898202c885d1dcb2ee42be2"
+}

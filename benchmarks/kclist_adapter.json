@@ -1,0 +1,73 @@
+{
+  "upstream_sha256": "846918703eb1529b3c2d8bd9f9868bfe573a9e7eb46f90b8b718a7957686b100",
+  "stripped_sha256": "c87106823754c4a49a5d30a22dce213bfdbe6c700afa462b09479510f0dee78a",
+  "result_sha256": "5e16708ac7dfd0c6dba9af9cb7abaa48d0598facb234f8d390b0aa972beca1c8",
+  "changes": [
+    {
+      "start": 10,
+      "end": 10,
+      "old": "",
+      "new": "\ndouble stop_ratio = 0;\nint run_mode = 0;\ndouble limit_s = 0;\n"
+    },
+    {
+      "start": 215,
+      "end": 215,
+      "old": "",
+      "new": "\n  long long i0;\n"
+    },
+    {
+      "start": 216,
+      "end": 217,
+      "old": "  for (unsigned i = 0; i < g->n; ++i)\n",
+      "new": "  for (i0 = 0; i0 < (long long)g->n; ++i0) {\n    unsigned i = (unsigned)i0;\n"
+    },
+    {
+      "start": 218,
+      "end": 218,
+      "old": "",
+      "new": "  }\n"
+    },
+    {
+      "start": 228,
+      "end": 228,
+      "old": "",
+      "new": "        long long i1;\n"
+    },
+    {
+      "start": 229,
+      "end": 230,
+      "old": "        for (unsigned i = 0; i < g->e; ++i) {\n",
+      "new": "        for (i1 = 0; i1 < (long long)g->e; ++i1) {\n          unsigned i = (unsigned)i1;\n"
+    },
+    {
+      "start": 242,
+      "end": 242,
+      "old": "",
+      "new": "        long long i2;\n"
+    },
+    {
+      "start": 243,
+      "end": 244,
+      "old": "        for(unsigned i = 0; i < g->e; ++i) {\n",
+      "new": "        for (i2 = 0; i2 < (long long)g->e; ++i2) {\n          unsigned i = (unsigned)i2;\n"
+    },
+    {
+      "start": 321,
+      "end": 321,
+      "old": "",
+      "new": "  if (run_mode == 3) {  \n    printf(\"mode=3 num_iter=%u stop_ratio=%g limit_s=%g\\n\", num_iter, stop_ratio, limit_s);\n    double iter_s = 0;  \n    for (unsigned t = 1; t <= num_iter; ++t) {\n      double a = omp_get_wtime();\n      CDF_CliqueEnum(g, k, FRANK_WOLFE);\n      double b = omp_get_wtime();\n      iter_s += b - a;\n      for (unsigned i = 0; i < g->n; ++i)\n        rho_tentative[i] = 0;\n      DensestSubsetInfo info = CDF_FindDensestSubset(g, k, t);\n      double report_s = omp_get_wtime() - b;\n      clock_t t1 = clock();\n      int cert = stop_ratio > 0 && info.density > 0 && info.ub <= stop_ratio * info.density;\n      printf(\"iteration %u: Approximate densest subgraph: %u nodes, %u edges, edge density = %f, k-clique density = %f, upper bound = %f. %ld milliseconds. iterations_ms = %.1f report_ms = %.1f%s\\n\", t, info.n, info.m, info.m * 2.0 / info.n / (info.n - 1), info.density, info.ub, (t1 - t0) * 1000 / CLOCKS_PER_SEC, iter_s * 1000, report_s * 1000, cert ? \" certified\" : \"\");\n      fflush(stdout);\n      if (cert)\n        break;\n      if (limit_s > 0 && iter_s + report_s > limit_s) {\n        printf(\"limit reached: iterations plus report over %g s\\n\", limit_s);\n        break;\n      }\n    }\n    return;\n  }\n"
+    },
+    {
+      "start": 336,
+      "end": 336,
+      "old": "",
+      "new": "    if (stop_ratio > 0 && info.density > 0 && info.ub <= stop_ratio * info.density) break;  \n"
+    },
+    {
+      "start": 348,
+      "end": 348,
+      "old": "",
+      "new": "  if (argc > 6) stop_ratio = atof(argv[6]);  \n  if (argc > 7) run_mode = atoi(argv[7]);    \n  if (argc > 8) limit_s = atof(argv[8]);     \n"
+    }
+  ]
+}

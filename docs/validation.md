@@ -1,0 +1,11 @@
+# Release validation
+
+The release was copied to a new directory using only the files intended for publication. No original research source, binary, input graph or baseline checkout was copied into that directory, except the explicitly distributed original v7 executable. MSVC and the explicit external GCC toolchain were the build dependencies. All upstream baseline repositories and zlib were downloaded again, and Enron was downloaded again from SNAP.
+
+The [evidence manifest](validation/evidence.json) records 26 successful builds and 55 completed validation records. All 55 records passed. These include 145 numerical batches and 27 independently accepted strict checkpoints. Contract tests additionally passed 2,048 exhaustive graph/mode checks, the 300,003-vertex prefix regression, atomic-claim/Hessian checks with 2/8/24 workers, and integer/potential-box negative controls. Seven external baseline programs were compiled and executed. The complete Enron CSR matches the recorded research input SHA256; its validation uses three batches and one worker, not the published timing protocol.
+
+The [source-file inventory](validation/release-files.json), [build identities](validation/builds/), command records and logs are included. Local paths are normalized to `<artifact>`, `<python>` and `<cxx>`; each record retains the original log hash and the hash of the normalized public log. The complete test command is `python tools/validate_release.py --baselines --real-data` after building the listed targets.
+
+CQ's release functional tests use three updates at epsilon=0.01, 0.1 and 0.5. A separate earlier epsilon=0.1 run on the 24-vertex, 87-update exported fixture reached its 60-second limit; its default parameters required 35,391 copies per hyperedge. That timeout is a recorded baseline outcome, not a successful epsilon=0.1 timing result. The unchanged epsilon=0.01/0.1 entry points remain available for the full experiments.
+
+The 15 archived main-log hashes were checked separately. The distributed v7 executable supports binary-level reruns, while its exact source snapshot remains unrecovered. The guarded implementation, later source snapshots and all new entry points are source-buildable. This validation does not claim that the complete published timing campaign, full Friendster run or all large temporal cases were repeated.

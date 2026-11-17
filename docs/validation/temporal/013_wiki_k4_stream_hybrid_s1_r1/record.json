@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "suite": "main",
+    "job": {
+      "dataset": "wiki",
+      "version": "guarded",
+      "k": 4,
+      "epsilon": "0.01",
+      "batch": 2,
+      "batches": 4,
+      "mode": "stream",
+      "hold": "97",
+      "check": 1,
+      "seed": 1,
+      "threads": 1,
+      "strategy": "hybrid",
+      "q": 64,
+      "env": {},
+      "limit": 7200,
+      "name": "013_wiki_k4_stream_hybrid_s1_r1"
+    },
+    "graph_sha256": "15073158a852ef5cf762df4ef10cb06f4d5741a8cbafbde0141ff80a02848f5f",
+    "executable_sha256": "52e6ab1cf90e526343606a9322cadd455a68052b0fe5216f7673c046440ce24b",
+    "command": [
+      "<artifact>\\build\\memcap.exe",
+      "32768",
+      "<artifact>\\build\\guarded.exe",
+      "<artifact>\\runs\\release-validation\\input\\fixture.tbin",
+      "4",
+      "0.01",
+      "2",
+      "4",
+      "stream",
+      "1",
+      "1",
+      "97",
+      "hybrid",
+      "64"
+    ],
+    "environment": {
+      "OMP_NUM_THREADS": "1"
+    },
+    "limit_s": 7200
+  },
+  "status": "ok",
+  "started_utc": "2026-11-17T20:56:34Z",
+  "exit_code": 0,
+  "wall_s": 0.028886299987789243,
+  "validation": {
+    "batches": 4,
+    "numerical_checks": 4,
+    "contract": "binary64-numerical-closure"
+  },
+  "original_log_sha256": "0ade7058bcbf1d6467a10697a068beb1584c97888253ea7d1e61f38c16b9e227",
+  "log_sha256": "319612fea091c88e34f25666b4684488b482f6ef3d7ed46d99bc3378b179b4ac"
+}

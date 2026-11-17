@@ -1,0 +1,34 @@
+{
+  "compiler": "MSVC x64",
+  "command": [
+    "cl",
+    "/nologo",
+    "/O2",
+    "/TC",
+    "/openmp:llvm",
+    "/EHsc",
+    "/I<artifact>\\src",
+    "/I<artifact>\\external\\kclist",
+    "/D_CRT_SECURE_NO_WARNINGS",
+    "<artifact>\\build\\adapters\\kCDensestNoAtom.c",
+    "<artifact>\\external\\kclist\\BinaryHeap.c",
+    "<artifact>\\external\\kclist\\GraphDupAdj.c",
+    "/Fe:kclist.exe",
+    "/link",
+    "Psapi.lib",
+    "/STACK:268435456"
+  ],
+  "sources": {
+    "build\\adapters\\kCDensestNoAtom.c": "906ff1b54c3970b395f94967d570147f5cc8ce7ee646605021e4fd60f84fd94f",
+    "external\\kclist\\BinaryHeap.c": "403e21b650d15ed7ce8ca7679a4259c50aeed2f637e8d9ac6d49045b1063cbd4",
+    "external\\kclist\\GraphDupAdj.c": "853789bee09836ba3c74b3c6986a86526b35ccfe0f9c6cdc6bc57de22f395d70",
+    "external\\kclist\\MaxFlow.hpp": "d8eb1eacff641ccc6857f9fdd34299ad83b8db448dfe325250f34958420fadc9",
+    "external\\kclist\\MaxFlowDouble.hpp": "111ab48ae4bf1ed5d31fadfd78617c1fa72d18e04792ad97c2af7687c2cb75e2",
+    "src\\absorber_claim.hpp": "c7d95c208d5abd5dc8f3c8ea09c8948ddd108db35eef0f67a72b8ce81d131744",
+    "src\\barrier.hpp": "b22a6470ef6947a63da27eb4ab24f56733c89c40ce70f3b04e777bdf2c9fc818",
+    "src\\cliques.hpp": "fd639bea455fad54067622a4c720723571fb815a8854f8ad071a432ba550ba90",
+    "src\\export_snapshot.hpp": "0be73872be125593640c1affb4210c97b18f469fd6dd3acbee067da2af8a0782",
+    "src\\graph.hpp": "7aa1ed64e3803440946ae385a7f2da32ca7bd5f930d91c22477c3119eb22b590"
+  },
+  "binary_sha256": "792c76b827c81e77a9acbf6d457523edc835914637a57eb2d61fdb875e3c774d"
+}
